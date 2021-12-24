@@ -1,0 +1,79 @@
+
+<!doctype html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Superhot Prototype | Yurk</title>
+    <meta content="It you're up for a first person shooter with a difference, then it's TIME you played Super Hot Prototype!" name=description>
+<link rel="stylesheet" href="asset/css/style.css">
+<link rel="shortcut icon" href="TemplateData/favicon.ico" />
+<script src="asset/js/UnityProgress.js"></script>
+</head>
+<body class="template">
+    
+    
+    
+<!-- *************************************************************** -->    
+<!-- GAME SPLASH INSERT -->
+<script>
+var cssX=document.createElement("link");
+cssX.setAttribute("rel", "stylesheet");
+cssX.setAttribute("type", "text/css");
+cssX.setAttribute("href", "../../assets/css/gameUI.css");
+document.getElementsByTagName("head")[0].appendChild(cssX)
+    
+var game={ 
+title:"Superhot Prototype", //GENERIC...
+desktopCompatible:true,
+touchCompatible:true,
+walkthrough:"",
+loadingSizeMB:0,
+orientation:"Landscape",
+orientationAdviceRequired:true,
+showBackButton:true,
+shiftBackButton:0,
+diableRightMouseButton:true,
+spare:0
+}
+
+</script>
+        
+<script src="asset/js/gameUI.js"></script>
+<!-- END INSERT -->
+<!-- *************************************************************** -->
+    
+    
+    
+<!--    
+<p class="header"><span>Unity WebGL Player | </span>SUPERHOT</p>
+<div class="template-wrap clear">
+-->
+
+<div class="webgl-content">    
+<canvas id="canvas" oncontextmenu="event.preventDefault()"></canvas>
+    </div>
+    
+<!--    
+    <br>
+<div class="logo"></div>
+<div class="fullscreen"><img src="TemplateData/fullscreen.png" width="38" height="38" alt="Fullscreen" title="Fullscreen" onclick="SetFullscreen(1);" /></div>
+<div class="title">SUPERHOT</div>
+</div>
+<p class="footer">&laquo; created with <a href="http://unity3d.com/" title="Go to unity3d.com">Unity</a> &raquo;</p>
+-->
+    
+<script type='text/javascript'>
+  var Module = {
+    TOTAL_MEMORY: 268435456,
+    errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+    compatibilitycheck: null,
+    dataUrl: "Release/webgl.datagz",
+    codeUrl: "Release/webgl.jsgz",
+    memUrl: "Release/webgl.memgz",
+    
+  };
+</script>
+<script src="asset/js/UnityLoader.js"></script>
+</body>
+</html>
