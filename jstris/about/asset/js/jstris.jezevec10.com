@@ -4,21 +4,21 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="csrf-token" content="Vzbji21nSh14vlEMC7b1bxi4cuV7ThHWcs6Ph8us">
+<meta name="csrf-token" content="PsPdZF46UfxLqY2Bfh5IDdPiKxYqOzQ06NLf28Jm">
 <title>Jstris</title>
-<link media="all" rel="stylesheet" href="asset/css/main.css">
+<link media="all" rel="stylesheet" href="https://s.jezevec10.com/css/main.css?id=e7ac13d58db69d420b23">
 <link rel="shortcut icon" href="/res/favicon.ico" type="image/vnd.microsoft.icon" id="favicon">
 <meta name="description" content="Online multiplayer puzzle game">
-<script>window.Laravel = {"csrfToken":"Vzbji21nSh14vlEMC7b1bxi4cuV7ThHWcs6Ph8us"}</script>
-<script defer src="asset/js/app.js"></script>
-<script async src="asset/js/ga.js"></script>
+<script>window.Laravel = {"csrfToken":"PsPdZF46UfxLqY2Bfh5IDdPiKxYqOzQ06NLf28Jm"}</script>
+<script defer src="https://s.jezevec10.com/js/app.js?id=db537a26944fb6f21c91"></script>
+<script async src="https://s.jezevec10.com/js/ga.js?id=59c66906331844362528"></script>
 <meta name="apple-mobile-web-app-capable" content="yes">
 <style type="text/css">body{ background: black !important; }</style>
-<link media="all" rel="stylesheet" href="asset/css/game-style.css">
-<script defer src="asset/js/en.js"></script>
-<script defer src="asset/js/replayer.js"></script>
-<script defer src="asset/js/game.js"></script>
-<script defer src="asset/js/components.js"></script>
+<link media="all" rel="stylesheet" href="https://s.jezevec10.com/css/game-style.css?id=a9f04dd4b2fd5e526380">
+<script defer src="/lang/en.js?bb83b45cbe7065bfa1737953fefde558"></script>
+<script defer src="https://s.jezevec10.com/js/replayer.js?id=8f431dce6de8e5f58f5b"></script>
+<script defer src="https://s.jezevec10.com/js/game.js?id=820f5ddf59f207a9ed10"></script>
+<script defer src="https://s.jezevec10.com/js/components.js?id=ba051761cb46dd8bd965"></script>
 <script>
 var conf_global = {v: "v1.39",
 srvScheme: "wss",
@@ -41,185 +41,185 @@ name: ""};
 <span class="icon-bar"></span>
 <span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="https://www.narwhalkid.com/jstris/">
-Unblocked jstris.jezevec10.com
+<a class="navbar-brand" href="https://jstris.jezevec10.com">
+Jstris
 </a>
 </div>
 <div class="collapse navbar-collapse" id="app-navbar-collapse">
 <ul class="nav navbar-nav" id="mnav">
 <li class="dropdown">
-<a href="https://www.narwhalkid.com/jstris/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Play <span class="caret"></span></a>
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Play <span class="caret"></span></a>
 <ul class="dropdown-menu plLinks" role="menu">
-<li><a href="https://www.narwhalkid.com/jstris//">Live</a></li>
+<li><a href="/">Live</a></li>
 <li class="dropdown-submenu">
-<a tabindex="-1" href="https://www.narwhalkid.com/jstris/play/sprint" id="plH">Sprint</a>
+<a tabindex="-1" href="/play/sprint" id="plH">Sprint</a>
 <ul class="dropdown-menu">
-<li><a id="pl2" href="https://www.narwhalkid.com/jstris/play/sprint/20">20L</a></li>
-<li><a id="pl3" href="https://www.narwhalkid.com/jstris/play/sprint/40">40L</a></li>
-<li><a id="pl4" href="https://www.narwhalkid.com/jstris/play/sprint/100">100L</a></li>
-<li><a id="pl5" href="https://www.narwhalkid.com/jstris/play/sprint/1000">1000L</a></li>
+<li><a id="pl2" href="/play/sprint/20">20L</a></li>
+<li><a id="pl3" href="/play/sprint/40">40L</a></li>
+<li><a id="pl4" href="/play/sprint/100">100L</a></li>
+<li><a id="pl5" href="/play/sprint/1000">1000L</a></li>
 </ul>
 </li>
 <li class="dropdown-submenu">
-<a tabindex="-1" href="https://www.narwhalkid.com/jstris/play/cheeseRace" id="plI">Cheese race</a>
+<a tabindex="-1" href="/play/cheeseRace" id="plI">Cheese race</a>
 <ul class="dropdown-menu">
-<li><a id="pl6" href="https://www.narwhalkid.com/jstris/play/cheeseRace/10">10L</a></li>
-<li><a id="pl7" href="https://www.narwhalkid.com/jstris/play/cheeseRace/18">18L</a></li>
-<li><a id="pl8" href="https://www.narwhalkid.com/jstris/play/cheeseRace/100">100L</a></li>
+<li><a id="pl6" href="/play/cheeseRace/10">10L</a></li>
+<li><a id="pl7" href="/play/cheeseRace/18">18L</a></li>
+<li><a id="pl8" href="/play/cheeseRace/100">100L</a></li>
 </ul>
  </li>
-<li><a href="https://www.narwhalkid.com/jstris/maps">Map downstack</a></li>
-<li><a id="pl9" href="https://www.narwhalkid.com/jstris/play/survival">Survival</a></li>
-<li><a id="plA" href="https://www.narwhalkid.com/jstris/play/ultra">Ultra</a></li>
-<li><a id="plB" href="https://www.narwhalkid.com/jstris/play/20TSD">20TSD</a></li>
-<li><a id="plC" href="https://www.narwhalkid.com/jstris/play/PC">PC Mode</a></li>
-<li><a id="plD" href="https://www.narwhalkid.com/jstris/play/practice">Practice</a></li>
+<li><a href="https://jstris.jezevec10.com/maps">Map downstack</a></li>
+<li><a id="pl9" href="/play/survival">Survival</a></li>
+<li><a id="plA" href="/play/ultra">Ultra</a></li>
+<li><a id="plB" href="/play/20TSD">20TSD</a></li>
+<li><a id="plC" href="/play/PC">PC Mode</a></li>
+<li><a id="plD" href="/play/practice">Practice</a></li>
 <li class="dropdown-submenu">
-<a tabindex="-1" href="https://www.narwhalkid.com/jstris/#">Rulesets</a>
+<a tabindex="-1" href="#">Rulesets</a>
 <ul class="dropdown-menu">
-<li><a id="plE" href="https://www.narwhalkid.com/jstris/play/big">Big mode</a></li>
-<li><a id="plF" href="https://www.narwhalkid.com/jstris/play/pentomino">Pentomino</a></li>
-<li><a id="plG" href="https://www.narwhalkid.com/jstris/play/MPH">MPH</a></li>
+<li><a id="plE" href="/play/big">Big mode</a></li>
+<li><a id="plF" href="/play/pentomino">Pentomino</a></li>
+<li><a id="plG" href="/play/MPH">MPH</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="dropdown">
-<a href="https://www.narwhalkid.com/jstris/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Leaderboard <span class="caret"></span></a>
+<li class="dropdown ">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Leaderboard <span class="caret"></span></a>
 <ul class="dropdown-menu" role="menu">
-<li class=""><a href="https://www.narwhalkid.com/jstris/sprint">Sprint</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/cheese">Cheese race</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/survival">Survival</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/ultra">Ultra</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/20TSD">20TSD</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/PC-mode">PC Mode</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/sprint">Sprint</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/cheese">Cheese race</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/survival">Survival</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/ultra">Ultra</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/20TSD">20TSD</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/PC-mode">PC Mode</a></li>
 </ul>
 </li>
-<li class="dropdown">
-<a href="https://www.narwhalkid.com/jstris/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
+<li class="dropdown ">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Maps <span class="caret"></span></a>
 <ul class="dropdown-menu" role="menu">
-<li class=""><a href="https://www.narwhalkid.com/jstris/maps">Browse</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/maps/random">Random map</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/maps/create">Map Designer</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/maps/games">Latest games</a></li>
-<li class=""><a href="https://www.narwhalkid.com/jstris/maps/leaderboard">Leaderboard</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/maps">Browse</a></li>
+<li><a href="https://jstris.jezevec10.com/maps/random">Random map</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/maps/create">Map Designer</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/maps/games">Latest games</a></li>
+<li class=""><a href="https://jstris.jezevec10.com/maps/leaderboard">Leaderboard</a></li>
 </ul>
 </li>
 <li class="">
-<a href="https://www.narwhalkid.com/jstris/about">About</a>
+<a href="https://jstris.jezevec10.com/about">About</a>
 </li>
 <li class="">
-<a href="https://www.narwhalkid.com/jstris/donate">Donate</a>
+<a href="https://jstris.jezevec10.com/donate">Donate</a>
 </li>
 </ul>
 <ul class="nav navbar-nav navbar-right">
 <li class="dropdown">
-<a href="https://www.narwhalkid.com/jstris/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
 en <span class="caret"></span>
 </a>
 <ul class="dropdown-menu" role="menu">
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=en" hreflang="en">en
+<a href="https://jstris.jezevec10.com/?langSwitch=en" hreflang="en">en
 <span class="cinf">100%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=cs" hreflang="cs">cs
+<a href="https://jstris.jezevec10.com/?langSwitch=cs" hreflang="cs">cs
 <span class="cinf">78%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=da" hreflang="da">da
+<a href="https://jstris.jezevec10.com/?langSwitch=da" hreflang="da">da
 <span class="cinf">52%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=de" hreflang="de">de
+<a href="https://jstris.jezevec10.com/?langSwitch=de" hreflang="de">de
 <span class="cinf">79%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=es" hreflang="es">es
+<a href="https://jstris.jezevec10.com/?langSwitch=es" hreflang="es">es
 <span class="cinf">99%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=fi" hreflang="fi">fi
+<a href="https://jstris.jezevec10.com/?langSwitch=fi" hreflang="fi">fi
 <span class="cinf">81%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=fr" hreflang="fr">fr
+<a href="https://jstris.jezevec10.com/?langSwitch=fr" hreflang="fr">fr
 <span class="cinf">100%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=ga" hreflang="ga">ga
+<a href="https://jstris.jezevec10.com/?langSwitch=ga" hreflang="ga">ga
 <span class="cinf">43%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=id" hreflang="id">id
+<a href="https://jstris.jezevec10.com/?langSwitch=id" hreflang="id">id
 <span class="cinf">52%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=it" hreflang="it">it
+<a href="https://jstris.jezevec10.com/?langSwitch=it" hreflang="it">it
 <span class="cinf">43%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=ja" hreflang="ja">ja
+<a href="https://jstris.jezevec10.com/?langSwitch=ja" hreflang="ja">ja
 <span class="cinf">100%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=ko" hreflang="ko">ko
+<a href="https://jstris.jezevec10.com/?langSwitch=ko" hreflang="ko">ko
 <span class="cinf">61%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=nl" hreflang="nl">nl
+<a href="https://jstris.jezevec10.com/?langSwitch=nl" hreflang="nl">nl
 <span class="cinf">81%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=pl" hreflang="pl">pl
+<a href="https://jstris.jezevec10.com/?langSwitch=pl" hreflang="pl">pl
 <span class="cinf">52%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=pt" hreflang="pt">pt
+<a href="https://jstris.jezevec10.com/?langSwitch=pt" hreflang="pt">pt
 <span class="cinf">99%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=ru" hreflang="ru">ru
+<a href="https://jstris.jezevec10.com/?langSwitch=ru" hreflang="ru">ru
 <span class="cinf">100%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=sv" hreflang="sv">sv
+<a href="https://jstris.jezevec10.com/?langSwitch=sv" hreflang="sv">sv
 <span class="cinf">81%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=tr" hreflang="tr">tr
+<a href="https://jstris.jezevec10.com/?langSwitch=tr" hreflang="tr">tr
 <span class="cinf">81%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=vi" hreflang="vi">vi
+<a href="https://jstris.jezevec10.com/?langSwitch=vi" hreflang="vi">vi
 <span class="cinf">79%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=zh" hreflang="zh">zh
+<a href="https://jstris.jezevec10.com/?langSwitch=zh" hreflang="zh">zh
 <span class="cinf">100%</span>
 </a>
 </li>
 <li>
-<a href="https://www.narwhalkid.com/jstris/?langSwitch=zh-tw" hreflang="zh-tw">zh-tw
+<a href="https://jstris.jezevec10.com/?langSwitch=zh-tw" hreflang="zh-tw">zh-tw
 <span class="cinf">77%</span>
 </a>
 </li>
@@ -228,8 +228,8 @@ en <span class="caret"></span>
 </li>
 </ul>
 </li>
-<li><a href="https://www.narwhalkid.com/jstris/login">Login</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/register">Register</a></li>
+<li><a href="https://jstris.jezevec10.com/login">Login</a></li>
+<li><a href="https://jstris.jezevec10.com/register">Register</a></li>
 </ul>
 </div>
 </div>
@@ -239,25 +239,25 @@ en <span class="caret"></span>
 <div id="settingsBox" style="display:none;">
 <div class="settingsTabs">
 <ul id="tabsMenu">
-<li><a href="https://www.narwhalkid.com/jstris/#" data-target="tab_controls">Controls</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/#" data-target="tab_settings">Game settings</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/#" data-target="tab_skin">Skin</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/#" data-target="tab_sound">Sound</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/#" data-target="tab_stats">Stats</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/#" data-target="tab_other">Other</a></li>
+<li><a href="javascript:void(0)" data-target="tab_controls">Controls</a></li>
+<li><a href="javascript:void(0)" data-target="tab_settings">Game settings</a></li>
+<li><a href="javascript:void(0)" data-target="tab_skin">Skin</a></li>
+<li><a href="javascript:void(0)" data-target="tab_sound">Sound</a></li>
+<li><a href="javascript:void(0)" data-target="tab_stats">Stats</a></li>
+<li><a href="javascript:void(0)" data-target="tab_other">Other</a></li>
 </ul>
 <div class="setTab" id="tab_controls">
 <h2>Game controls</h2>
 <em>Click on a text box and press the key you want.</em>
 <table>
-<tr><td width="180">Move Left:</td><td width="125"><input id="input1" type="text" size="7" value="" /></td><td id="kc1">0</td></tr>
-<tr><td>Move Right:</td><td><input id="input2" type="text" size="7" value="" /></td><td id="kc2">0</td></tr>
-<tr><td>Soft Drop:</td><td><input id="input3" type="text" size="7" value="" /></td><td id="kc3">0</td></tr>
-<tr><td>Hard Drop:</td><td><input id="input4" type="text" size="7" value="" /></td><td id="kc4">0</td></tr>
-<tr><td>Rotate Left:</td><td><input id="input5" type="text" size="7" value="" /></td><td id="kc5">0</td></tr>
-<tr><td>Rotate Right:</td><td><input id="input6" type="text" size="7" value="" /></td><td id="kc6">0</td></tr>
-<tr><td>Rotate 180:</td><td><input id="input8" type="text" size="7" value="" /></td><td id="kc8">0</td></tr>
-<tr><td>Hold:</td><td><input id="input7" type="text" size="7" value="" /></td><td id="kc7">0</td></tr>
+<tr><td width="180">Move Left:</td><td width="125"><INPUT id="input1" type="text" size="7" value="" /></td><td id="kc1">0</td></tr>
+<tr><td>Move Right:</td><td><INPUT id="input2" type="text" size="7" value="" /></td><td id="kc2">0</td></tr>
+<tr><td>Soft Drop:</td><td><INPUT id="input3" type="text" size="7" value="" /></td><td id="kc3">0</td></tr>
+<tr><td>Hard Drop:</td><td><INPUT id="input4" type="text" size="7" value="" /></td><td id="kc4">0</td></tr>
+<tr><td>Rotate Left:</td><td><INPUT id="input5" type="text" size="7" value="" /></td><td id="kc5">0</td></tr>
+<tr><td>Rotate Right:</td><td><INPUT id="input6" type="text" size="7" value="" /></td><td id="kc6">0</td></tr>
+<tr><td>Rotate 180:</td><td><INPUT id="input8" type="text" size="7" value="" /></td><td id="kc8">0</td></tr>
+<tr><td>Hold:</td><td><INPUT id="input7" type="text" size="7" value="" /></td><td id="kc7">0</td></tr>
 </table>
 <table>
 <tr><td><input type="checkbox" id="touch"></td><td><label for="touch">Enable touch screen controls (experimental)</label></td></tr>
@@ -268,12 +268,12 @@ en <span class="caret"></span>
 <div class="setTab" id="tab_settings">
 <h2>Game settings</h2>
 <table>
-<tr><td width="26%">DAS:</td><td><input size="10" id="DAS" type="text" value="117" />
-<span style="padding-left:10px;"><a style="color:grey;" href="https://www.narwhalkid.com/jstris/javascript:alert('TF DAS table:\nLevel 1 - 267\nLevel 2 - 183\nLevel 3 - 150\nLevel 4 - 133\nLevel 5 - 117')">TF DAS</a>
-| <a style="color:grey;" id="nullpoDAS" href="https://www.narwhalkid.com/jstris/#;">NullpoMino</a></span>
+<tr><td width="26%">DAS:</td><td><INPUT size="10" id="DAS" type="text" value="117" />
+<span style="padding-left:10px;"><a style="color:grey;" href="javascript:alert('TF DAS table:\nLevel 1 - 267\nLevel 2 - 183\nLevel 3 - 150\nLevel 4 - 133\nLevel 5 - 117')">TF DAS</a>
+| <a style="color:grey;" id="nullpoDAS" href="javascript:void(0);">NullpoMino</a></span>
 </td></tr>
-<tr><td>ARR:</td><td><input size="10" id="ARR" type="text" value="0" />
-<span style="padding-left:10px;"><a style="color:grey;" href="https://www.narwhalkid.com/jstris/javascript:alert('TF ARR table:\nLevel 1 - 50\nLevel 2 - 33\nLevel 3 - 22\nLevel 4 - 20\nLevel 5 - 17')">TF ARR</a></span>
+<tr><td>ARR:</td><td><INPUT size="10" id="ARR" type="text" value="0" />
+<span style="padding-left:10px;"><a style="color:grey;" href="javascript:alert('TF ARR table:\nLevel 1 - 50\nLevel 2 - 33\nLevel 3 - 22\nLevel 4 - 20\nLevel 5 - 17')">TF ARR</a></span>
 </td></tr>
 <tr><td>Soft-drop:</td><td>
 <form name="sdForm" style="display: block; margin-top:7px;">
@@ -317,7 +317,7 @@ en <span class="caret"></span>
 <tr><td></td><td id="moreSkins"></td></tr>
 </table>
 </form>
-<a href="https://www.narwhalkid.com/jstris/donate" target="_blank" class="mSkInf" id="mSkInf-s"><i class='glyphicon glyphicon-info-sign'></i><span>100+ more block skins available to Jstris Supporters for $5</span></a>
+<a href="/donate" target="_blank" class="mSkInf" id="mSkInf-s"><i class='glyphicon glyphicon-info-sign'></i><span>100+ more block skins available to Jstris Supporters for $5</span></a>
 </div>
 <div class="setTab" id="tab_sound">
 <h2>Sound</h2>
@@ -353,10 +353,10 @@ SE volume: <input id="vol-control" type="range" min="0" max="100" value="100" st
 <div class="setTab" id="tab_other">
 <h2>Other settings</h2>
 <table>
-<tr><td>Sprint reset:</td><td><input id="input9" class="keySelect" type="text" size="7" value="" /><span id="kc9" style="display:none">0</span>
+<tr><td>Sprint reset:</td><td><INPUT id="input9" class="keySelect" type="text" size="7" value="" /><span id="kc9" style="display:none">0</span>
 or <input type="checkbox" id="ffRestart"><label for="ffRestart">Finesse fault</label></td></tr>
 <tr><td></td><td><span class="settingsDesc">Choose an alternative key to reset a sprint game.</span></td></tr>
-<tr><td>Game reset:</td><td><input id="input10" class="keySelect" type="text" size="7" value="" /><span id="kc10" style="display:none">0</span></td></tr>
+<tr><td>Game reset:</td><td><INPUT id="input10" class="keySelect" type="text" size="7" value="" /><span id="kc10" style="display:none">0</span></td></tr>
 <tr><td></td><td><span class="settingsDesc">Choose an alternative key to reset a live game.</span></td></tr>
 </table>
 <table>
@@ -417,8 +417,8 @@ or <input type="checkbox" id="ffRestart"><label for="ffRestart">Finesse fault</l
 <div id="statOptId"></div>
 </div>
 </div>
-<button id="settingsSave"><svg class="btnIcn"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-check"></use></svg> Save Settings & Close</button>
-<button id="settingsReset"><svg class="btnIcn"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-rubbish"></use></svg> Reset all</button>
+<button id="settingsSave"><svg class="btnIcn"><use xlink:href="/svg/dark.svg#s-check"></use></svg> Save Settings & Close</button>
+<button id="settingsReset"><svg class="btnIcn"><use xlink:href="/svg/dark.svg#s-rubbish"></use></svg> Reset all</button>
 </div>
 <div id="gameFrame">
 <div id="moreResults" style="display:none;">
@@ -458,7 +458,7 @@ or <input type="checkbox" id="ffRestart"><label for="ffRestart">Finesse fault</l
 Sprint <span class="prKey">F4</span>
 </div>
 <div id="ruleSel1" class="prMenuItem cCom">
-<svg class="btnIcn"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-gear"></use></svg>
+<svg class="btnIcn"><use xlink:href="/svg/dark.svg#s-gear"></use></svg>
 <span>Default</span>
 <span class="arrowclass"></span>
 </div>
@@ -509,9 +509,9 @@ Show more </div>
 </div>
 <div id="lobbyBottom">
 <button id="editRoomButton"><svg class="btnIcn"><use xlink:href="/svg/dark.svg#s-edit"></use></svg> Edit</button>
-<button id="createRoomButton"><svg class="btnIcn"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-plus"></use></svg> Create room</button>
-<button id="refreshLobby"><svg class="btnIcn"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-reload"></use></svg> Reload</button>
-<button id="closeLobby"><svg class="btnIcn"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-exit"></use></svg> Close</button>
+<button id="createRoomButton"><svg class="btnIcn"><use xlink:href="/svg/dark.svg#s-plus"></use></svg> Create room</button>
+<button id="refreshLobby"><svg class="btnIcn"><use xlink:href="/svg/dark.svg#s-reload"></use></svg> Reload</button>
+<button id="closeLobby"><svg class="btnIcn"><use xlink:href="/svg/dark.svg#s-exit"></use></svg> Close</button>
 </div>
 </div>
 <div id="createRoom" style="display:none;">
@@ -529,7 +529,7 @@ Show more </div>
 <option value="7">7</option>
 <option value="28">No limit</option>
 </select>
-<a href="https://www.narwhalkid.com/jstris/#" id="addJL">+ Add join limit</a>
+<a href="javascript:void(0)" id="addJL">+ Add join limit</a>
 </td>
 </tr>
 <tr id="trMode"><td>Mode:</td>
@@ -570,9 +570,9 @@ Show more </div>
 </table>
 <div style="margin-top:15px;font-size:12px">
 Other options:
-<ul style="margin-top:5px"><li><a href="https://www.narwhalkid.com/jstris/#" id="customPre">Use custom preset</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/presets" target="_blank">Browse custom presets</a></li>
-<li><a href="https://www.narwhalkid.com/jstris/presets/submit" target="_blank">Submit a new one</a></li>
+<ul style="margin-top:5px"><li><a href="javascript:void(0)" id="customPre">Use custom preset</a></li>
+<li><a href="/presets" target="_blank">Browse custom presets</a></li>
+<li><a href="/presets/submit" target="_blank">Submit a new one</a></li>
 </ul>
 </div>
 </div>
@@ -588,9 +588,9 @@ Other options:
 </td>
 </tr>
 <tr class="adv"><td>Attack table:</td><td><input type="text" id="attackTable">
-<span class="inputDesc"><a href="https://www.narwhalkid.com/jstris/javascript:alert('Insert attacks in this order:\n0lines,1line,2lines,3lines,4lines,TD,TT,TS,TMS,PC,B2B')">?</a></span></td></tr>
+<span class="inputDesc"><a href="javascript:alert('Insert attacks in this order:\n0lines,1line,2lines,3lines,4lines,TD,TT,TS,TMS,PC,B2B')">?</a></span></td></tr>
 <tr class="adv"><td>Combo attack:</td><td><input type="text" id="comboTable">
-<span class="inputDesc"><a href="https://www.narwhalkid.com/jstris/javascript:alert('Insert combo attacks in this order:\nNoCombo,1,2,3,4,5,6,7,8,9,10,11,12+')">?</a></span></td></tr>
+<span class="inputDesc"><a href="javascript:alert('Insert combo attacks in this order:\nNoCombo,1,2,3,4,5,6,7,8,9,10,11,12+')">?</a></span></td></tr>
 <tr><td>Garbage distribution:</td>
 <td>
 <select id="gdmSel" size="1">
@@ -661,9 +661,9 @@ Other options:
 <tr><td>Hold:</td><td><input type="checkbox" id="hasHold" checked></td></tr>
 <tr><td>Solid garbage:</td><td><input type="checkbox" id="hasSolid"> After <input type="text" id="solid" style="width:80px"><span class="inputDesc">(s)</span></td></tr>
 <tr class="adv"><td>Solid g. speed:</td><td><input type="text" id="sgProfile" style="width:140px"><span class="inputDesc">
-<a href="https://www.narwhalkid.com/jstris/javascript:alert('Set delays between solid garbage additions. Last value is repeated.')">?</a></span></td></tr>
+<a href="javascript:alert('Set delays between solid garbage additions. Last value is repeated.')">?</a></span></td></tr>
 <tr class="adv"><td>Lock delay:</td><td><input type="text" id="lockDelay" style="width:140px"><span class="inputDesc">L1/L2/L3 (ms)
-<a href="https://www.narwhalkid.com/jstris/javascript:alert('L1-lock delay\nL2-max single LD extension\nL3-max time before autolock')">?</a></span></td></tr>
+<a href="javascript:alert('L1-lock delay\nL2-max single LD extension\nL3-max time before autolock')">?</a></span></td></tr>
 <tr><td width="130">Clear delay:</td><td><input type="text" id="clearDelay" style="width:80px"><span class="inputDesc">(ms)</span></td></tr>
 <tr><td>Speed limit:</td><td><input type="text" id="speedLimit" style="width:80px"><span class="inputDesc">(PPS)</span></td></tr>
 <tr class="adv"><td>Gravity lvl:</td><td><input type="text" id="gravityLvl" style="width:80px"><span class="inputDesc">(0-28)</span></td></tr>
@@ -676,7 +676,7 @@ Other options:
 <input type="radio" name="allSpin" value="2" id="as2"><label for="as2"> 4-point</label>
 </td></tr>
 <tr class="adv"><td>Excl. blocks:</td><td><input type="text" id="asEx" style="width:80px"><span class="inputDesc">
-<a href="https://www.narwhalkid.com/jstris/javascript:alert('Enter comma-separated list of blocks exluded from allspin attacks. Eg.: T,J,L')">?</a></span></td></tr>
+<a href="javascript:alert('Enter comma-separated list of blocks exluded from allspin attacks. Eg.: T,J,L')">?</a></span></td></tr>
 <tr class="adv"><td>Invert garbage:</td><td><input type="checkbox" id="gInv"></td></tr>
  <tr class="adv"><td>Attack as solid:</td><td><input type="checkbox" id="solidAtk"></td></tr>
 <tr class="adv"><td>NoFourwide:</td><td><input type="checkbox" id="noFW"></td></tr>
@@ -686,7 +686,7 @@ Other options:
 <input type="hidden" id="r-ext" value="0">
 <div id="saveData" style="display:none">
 <h3>Save the preset</h3>
-Here is your preset data, you can <a href="https://www.narwhalkid.com/jstris/presets/submit" target="_blank">submit it here</a> to make it available to everyone.
+Here is your preset data, you can <a href="/presets/submit" target="_blank">submit it here</a> to make it available to everyone.
 <textarea id="saveDataArea" onclick="this.focus();this.select()"></textarea><br>
 <button id="saveDataClose">Close</button>
 </div>
@@ -729,8 +729,8 @@ Here you can create a report if you think someone has abused the game chat.
 </div>
 <div class="slots" id="gameSlots">
 <div id="resultsBox" style="display:none;">
-<a target="_blank" href="https://www.narwhalkid.com/jstris/#" id="saveLink"><img src="https://s.jezevec10.com/res/link.png" height="16"></a>
-<a href="https://www.narwhalkid.com/jstris/#" id="closeLink"><img src="https://s.jezevec10.com/res/close.png" height="16"></a>
+<a target="_blank" href="#" id="saveLink"><img src="https://s.jezevec10.com/res/link.png" height="16"></a>
+<a href="javascript:void(0)" id="closeLink"><img src="https://s.jezevec10.com/res/close.png" height="16"></a>
 <h3>Game results</h3>
 <div id="resultsContent"></div>
 <div id="showMore">
@@ -759,8 +759,8 @@ Here you can create a report if you think someone has abused the game chat.
 <div id="chatInputArea">
 <div class="chatInputC">
 <input type="text" autocomplete="off" size="500" id="chatInput" value="">
-<svg class="emSel"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-emote"></use></svg>
-<svg class="warnI"><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-warn"></use></svg>
+<svg class="emSel"><use xlink:href="/svg/dark.svg#s-emote"></use></svg>
+<svg class="warnI"><use xlink:href="/svg/dark.svg#s-warn"></use></svg>
 </div>
 <button id="sendMsg">Send</button>
 </div>
@@ -770,16 +770,16 @@ Here you can create a report if you think someone has abused the game chat.
 </div>
 <div id="tcc" style="display:none">
 <div>
-<span id="tc-dr"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-r180"></use></svg></span>
-<span id="tc-h"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-hold"></use></svg></span>
-<span id="tc-hd"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-harddrop"></use></svg></span>
+<span id="tc-dr"><svg><use xlink:href="/svg/dark.svg#s-r180"></use></svg></span>
+<span id="tc-h"><svg><use xlink:href="/svg/dark.svg#s-hold"></use></svg></span>
+<span id="tc-hd"><svg><use xlink:href="/svg/dark.svg#s-harddrop"></use></svg></span>
 </div>
 <div>
-<span id="tc-l"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-back"></use></svg></span>
-<span id="tc-r"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-forward"></use></svg></span>
-<span id="tc-d"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-down"></use></svg></span>
-<span id="tc-cc"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-ccw"></use></svg></span>
-<span id="tc-c"><svg><use xlink:href="https://s.jezevec10.com/svg/dark.svg#s-cw"></use></svg></span>
+<span id="tc-l"><svg><use xlink:href="/svg/dark.svg#s-back"></use></svg></span>
+<span id="tc-r"><svg><use xlink:href="/svg/dark.svg#s-forward"></use></svg></span>
+<span id="tc-d"><svg><use xlink:href="/svg/dark.svg#s-down"></use></svg></span>
+<span id="tc-cc"><svg><use xlink:href="/svg/dark.svg#s-ccw"></use></svg></span>
+<span id="tc-c"><svg><use xlink:href="/svg/dark.svg#s-cw"></use></svg></span>
 </div>
 </div>
 </div>
