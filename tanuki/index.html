@@ -1,16 +1,25 @@
-<html>
-<header>
-
-<link rel="stylesheet" href="TemplateData/style.css">
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Tanuki Sunset</title>
+    <link rel="shortcut icon" href="https://www.narwhalkid.com/images/nklogo-icon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
-	<script src="tanuki_sunset.js"></script>
+    <script src="Build/UnityLoader.js"></script>
     <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "tanuki_sunset.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
     </script>
-</header>
-<body style="background-color:black;">
-<div class="webgl-content">
-        <div id="gameContainer" style="width: 800px; height: 660px; margin: auto"></div>
-        </div>
-</body>
+</head>
+  <body>
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
+        <div class="title">Tanuki Sunset</div>
+      </div>
+    </div>
+  </body>
 </html>
