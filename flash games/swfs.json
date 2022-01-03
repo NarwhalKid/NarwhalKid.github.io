@@ -1,0 +1,11 @@
+{
+  "swfs": [
+    {
+      "location": "swfs/papaspizzeria_v2",
+      "title": "Papa's Pizzeria",
+      "author": "papalouie.com",
+      "authorLink": "http://papalouie.com/",
+      "type": "Game"
+    },
+  ]
+}
