@@ -1,0 +1,28 @@
+
+<html>
+<head>
+    <script womginx-processed src="./wombat/dist/wombat.js"></script>
+    <script womginx-processed src="./wombat-handler.js" processed-attribute="womginx-processed">
+    </script>
+    <script womginx-processed src="./main/sdk.1.2.js"></script>
+    <script src="./HTML5_DmitriyZaletov_Diggy.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script>
+        document.addEventListener(
+        'gesturestart', (e) => e.preventDefault()
+        );
+        if (/iPad|iPhone|iPod/.test(navigator.userAgent)) {
+        window.document.addEventListener('touchmove', e => {
+        if(e.scale !== 1) {
+        e.preventDefault();
+        }
+        }, {passive: false});
+        }
+    </script>
+
+</head>
+<body style="width:100%;height:100%;-webkit-text-size-adjust:none;touch-action:none;margin:0;padding:0;overflow:hiddden;" style="margin:0; overflow:hidden">
+
+</body>
+</html>
