@@ -5,7 +5,7 @@
     <script src="TemplateData/UnityProgress.js"></script>
     <title>Baldi's Basics</title>
     <script src="baldi.js"></script>
-    <link rel="shortcut icon" href="https://www.narwhalkid.com/images/nklogo-icon.ico">
+    <link rel="shortcut icon" href="/images/nklogo-icon.ico">
     <script>
         var gameInstance = UnityLoader.instantiate("gameContainer", "baldi.json", {onProgress: UnityProgress,Module:{onRuntimeInitialized: function() {UnityProgress(gameInstance, "complete")}}});
     </script>
