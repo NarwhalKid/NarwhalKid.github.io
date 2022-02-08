@@ -1,7 +1,0 @@
-[package]
-name = "rp2c02-testsuite"
-version = "0.1.0"
-authors = ["Jan Bujak <j@exia.io>"]
-build = "build.rs"
-
-[dependencies]
