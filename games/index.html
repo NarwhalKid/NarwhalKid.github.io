@@ -12,46 +12,47 @@
       <!google stuff>
       // https://developers.google.com/identity/gsi/web/guides/handle-credential-responses-js-functions
 
-      <script src="https://accounts.google.com/gsi/client" async defer></script>
+      // <script src="https://accounts.google.com/gsi/client" async defer></script>
 
-      <div id="g_id_onload"
-           data-client_id="137179724091-7j95aamnhafu4mau2230cq17kkqkj4tj.apps.googleusercontent.com"
-           data-callback="handleCredentialResponse">
-          data-auto_select="true"
-          data-auto_prompt="false">
-      </div>
-      <div class="g_id_signin"
-           data-type="standard"
-           data-size="large"
-           data-theme="outline"
-           data-text="sign_in_with"
-           data-shape="rectangular"
-           data-logo_alignment="left">
-      </div>
+      // <div id="g_id_onload"
+      //     data-client_id="137179724091-7j95aamnhafu4mau2230cq17kkqkj4tj.apps.googleusercontent.com"
+      //     data-callback="handleCredentialResponse">
+      //    data-auto_select="true"
+      //    data-auto_prompt="false">
+      // </div>
+      // <div class="g_id_signin"
+      //     data-type="standard"
+      //     data-size="large"
+      //     data-theme="outline"
+      //     data-text="sign_in_with"
+      //     data-shape="rectangular"
+      //     data-logo_alignment="left">
+      // </div>
 
-      <script>
-          function handleCredentialResponse(response) {
+      // <script>
+      //    function handleCredentialResponse(response) {
           // decodeJwtResponse() is a custom function defined by you
           // to decode the credential response.
-          const responsePayload = decodeJwtResponse(response.credential);
+      //    const responsePayload = decodeJwtResponse(response.credential);
 
-          console.log("ID: " + responsePayload.sub);
-          console.log('Full Name: ' + responsePayload.name);
-          console.log('Given Name: ' + responsePayload.given_name);
-          console.log('Family Name: ' + responsePayload.family_name);
-          console.log("Image URL: " + responsePayload.picture);
-          console.log("Email: " + responsePayload.email);
-          }
-      </script>
-
-
+        //  console.log("ID: " + responsePayload.sub);
+        //  console.log('Full Name: ' + responsePayload.name);
+        //  console.log('Given Name: ' + responsePayload.given_name);
+        //  console.log('Family Name: ' + responsePayload.family_name);
+        //  console.log("Image URL: " + responsePayload.picture);
+        //  console.log("Email: " + responsePayload.email);
+        //  }
+      // </script>
 
 
-      <p style="color:white">Google test #:  5</p>
+
+
+     // <p style="color:white">Google test #:  5</p>
 
       <!website stuff>
 
       <p style="color:white">Everything with the same color will be broken at the same time. Please let me know when any of these are broken.</p>
+      <p style="color:white">note: It may look like im not updating the website but theres a lot going on behind the scenes</p>
 
       <a href="https://youtu.be/dQw4w9WgXcQ" style="color:aqua">Tutorial on how to get ***anything*** unblocked at school</a>
       <br>
