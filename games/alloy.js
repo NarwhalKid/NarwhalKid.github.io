@@ -1,4 +1,4 @@
 var front = 'https://nkalloy';
-var end = '.herokuapp.com/web/_aHR0cHM6Ly93d3cubmFyd2hhbGtpZC5jb20=_/blockedtest/'
+var end = '.herokuapp.com/web/_aHR0cHM6Ly9ibG9ja2FsbG95dGVzdC53b21naW54LnJlcGwuY28=_/'
 var el = document.getElementById('ifrm');
 el.src = front+num+end; // assign url to src property
