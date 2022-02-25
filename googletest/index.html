@@ -46,13 +46,15 @@
           // to decode the credential response.
           const responsePayload = decodeJwtResponse(response.credential);
           console.log("Email: " + responsePayload.email);
+          var email = responsePayload.email
+          console.log("Email var: " + email);
           }
        </script>
 
 
 
 
-      <p style="color:white">Google test #:  8</p>
+      <p style="color:white">Google test #:  9</p>
 
       <p style="color:white">Lets hope this works</p>
 
