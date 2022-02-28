@@ -1,1 +1,1 @@
-var num = '23'
+var num = '1'
