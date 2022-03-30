@@ -5,10 +5,10 @@
     <title id="title">start.hcps.org</title>
     <link id="icon" rel="shortcut icon" href="https://raw.githubusercontent.com/newnkgame/startlogo/main/favicon.ico">
     <meta name="robots" content="noindex,nofollow" />
-    <link media="all" rel="stylesheet" href="./css.css">
+    <link media="all" rel="stylesheet" id="css" href="./css.css">
 </head>
 
-<body style="background-color:black">
+<body id="body" style="background-color:black">
     <div id=inside>
         <input type="text" id="link" value="https://">
 
@@ -19,27 +19,54 @@
         <br>
         <button onclick="proxy()">Toggle Proxy</button>
         <a id=proxyId style="color:white">Proxy: On</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a style="color:white">Presets: </a>
+        <button onclick="pres1()">start.hcps.org</button>
+        <button onclick="pres2()">Google</button>
+        <button onclick="pres3()">ItsLearning</button>
+        <button onclick="pres4()">Office</button>
+        <button onclick="pres5()">Word</button>
+        <br>
+        <br>
+        <a style="color:white">Set tab name:</a>
+        <input type="text" id="tabName" value="start.hcps.org">
+        <button onclick="subName()">Submit name change</button>
+        <br>
+        <br>
+        <a style="color:white">Set tab icon (link):</a>
+        <input type="text" id="iconLink" value="https://raw.githubusercontent.com/newnkgame/startlogo/main/favicon.ico">
+        <button onclick="iconChange()">Submit icon change</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <a id="bookmarkletText" style="cursor:crosshair; color:white" href='javascript:(function()%7Bwindow.location.replace("https://start.hcps.org")%7D)()%3B'>Drag this text to your bookmarks bar (ctrl + shift + b to show bar) to get a bookmarklet. Click the bookmarklet if you get redirected awat from narwhalkid.com/history. It'll replace the link with https://start.hcps.org. (right click and hit edit to rename it)</a>
+        <br>
+        <input id="bkmrkLink" type="text" value="https://">
+        <button onclick="chngBkmrk()">Submit bookmarklet redirect change</button>
+        <script src=https://raw.githack.com/NarwhalKid/NarwhalKid.github.io/master/pydodge.js></script>
+        <script src="./js.js"></script>
     </div>
-    <script src=https://raw.githack.com/NarwhalKid/NarwhalKid.github.io/master/pydodge.js></script>
-    <script src="./js.js"></script>
-    <br>
-    <br>
-    <a style="color:white">Set tab name:</a>
-    <input type="text" id="tabName" value="start.hcps.org">
-    <button onclick="subName()">Submit name change</button>
-    <br>
-    <br>
-    <a style="color:white">Set tab icon (link):</a>
-    <input type="text" id="iconLink" value="https://raw.githubusercontent.com/newnkgame/startlogo/main/favicon.ico">
-    <button onclick="iconChange()">Submit icon change</button>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <a id="bookmarkletText" style="color:white" href='javascript:(function()%7Bwindow.location.replace("https://start.hcps.org")%7D)()%3B'>Drag this text to your bookmarks bar (ctrl + shift + b to show bar) to get a bookmarklet. Click the bookmarklet if you get redirected awat from narwhalkid.com/history. It'll replace the link with https://start.hcps.org. (right click and hit edit to rename it)</a>
-    <br>
-    <input id="bkmrkLink" type="text" value="https://">
-    <button onclick="chngBkmrk()">Submit bookmarklet redirect change</button>
 </body>
 </html>

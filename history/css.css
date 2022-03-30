@@ -2,3 +2,9 @@
 {
     display: inline;
 }
+button {
+    cursor: pointer;
+}
+a {
+    cursor: default;
+}

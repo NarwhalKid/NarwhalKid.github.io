@@ -10,19 +10,14 @@ function proxy() {
 
 function submit(onStat) {
   var x = document.getElementById("link").value;
-  document.getElementById("inside").innerHTML = '<iframe allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen id="ifrm" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="https://google.com/" width="1920" height="1080" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>;';
-  
-  
-
-	var el = document.getElementById('ifrm');
-  
+  document.getElementById("body").style = "";
+  document.getElementById("css").href = "";
+  document.getElementById("inside").innerHTML = '<iframe allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen id="ifrm" sandbox="allow-forms allow-modals allow-orientation-lock allow-pointer-lock allow-presentation allow-same-origin allow-scripts allow-top-navigation allow-top-navigation-by-user-activation" src="https://www.narwhalkid.com/broken" width="1920" height="1080" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;"></iframe>;';
+	var el = document.getElementById('ifrm');  
 	if (onStat == 1) {
 	var x = "https://nkpydodge" + num + ".herokuapp.com/course/" + x
 	}
-
-
-
-	el.src = x; // assign url to src property
+	el.src = x;
 }
 
 function chngBkmrk() {
@@ -37,4 +32,39 @@ function subName() {
 
 function iconChange() {
 	document.getElementById('icon').href = document.getElementById('iconLink').value;
+}
+
+function pres1() {
+	document.getElementById('tabName').value = 'start.hcps.org'
+	document.getElementById('iconLink').value = 'https://raw.githubusercontent.com/newnkgame/startlogo/main/favicon.ico'
+	subName()
+	iconChange()
+}
+
+function pres2() {
+	document.getElementById('tabName').value = 'Google'
+	document.getElementById('iconLink').value = 'https://www.google.com/favicon.ico'
+	subName()
+	iconChange()
+}
+
+function pres3() {
+	document.getElementById('tabName').value = 'itslearning'
+	document.getElementById('iconLink').value = 'https://cdn.itslearning.com/v3.127.1.616/favicon.ico'
+	subName()
+	iconChange()
+}
+
+function pres4() {
+	document.getElementById('tabName').value = 'Microsoft Office Home'
+	document.getElementById('iconLink').value = 'https://res.cdn.office.net/officehub/images/content/images/favicon-8f211ea639.ico'
+	subName()
+	iconChange()
+}
+
+function pres5() {
+	document.getElementById('tabName').value = 'Word'
+	document.getElementById('iconLink').value = 'https://res.cdn.office.net/officehub/images/content/images/favicons/favicon-word-svg-8eedb3d95e.ico'
+	subName()
+	iconChange()
 }
