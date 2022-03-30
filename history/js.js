@@ -24,3 +24,17 @@ function submit(onStat) {
 
 	el.src = x; // assign url to src property
 }
+
+function chngBkmrk() {
+	var bkLink = document.getElementById('bkmrkLink').value;
+	document.getElementById('bookmarkletText').innerText = "Drag this text to your bookmarks bar (ctrl + shift + b to show bar) to get a bookmarklet. Click the bookmarklet if you get redirected awat from narwhalkid.com/history. It'll replace the link with " + bkLink + ". (right click and hit edit to rename it)"
+	document.getElementById('bookmarkletText').href = 'javascript:(function()%7Bwindow.location.replace("' + bkLink + '")%7D)()%3B'
+}
+
+function subName() {
+	document.getElementById('title').innerText = document.getElementById('tabName').value;
+}
+
+function iconChange() {
+	document.getElementById('icon').href = document.getElementById('iconLink').value;
+}
