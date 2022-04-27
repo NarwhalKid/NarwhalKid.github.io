@@ -7,11 +7,12 @@
 /*edits by narwhal*/
 
 #modLInfo {
-    color: #e15959;
+    color: rgb(225 89 89);
 }
 
 #modDropper {
-    border: 4px dashed rgb(255 0 0 / 30%);
+    border: 4px dashed rgb(255 89 89);
+    color: rgb(225 89 89);
 }
 
 
