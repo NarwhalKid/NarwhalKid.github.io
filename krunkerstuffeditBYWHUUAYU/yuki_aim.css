@@ -684,6 +684,7 @@ input:checked+.sliderSml {
 }
 
 #menuWindow {
+    color: rgb(225 89 89);
     max-height: calc(100% - 240px) !important;
     width: calc(100% - 800px) !important;
     border-radius: 0;
