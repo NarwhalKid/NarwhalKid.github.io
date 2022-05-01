@@ -1,0 +1,1 @@
+window.location.replace("https://apps.apple.com/app/apple-store/id1482490089?pt=117945903&ct=tm.net&mt=8")

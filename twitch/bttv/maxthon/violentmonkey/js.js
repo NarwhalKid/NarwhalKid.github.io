@@ -1,0 +1,1 @@
+window.location.replace("https://extension.maxthon.com/detail/index.php?view_id=1680")

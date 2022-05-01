@@ -1,0 +1,1 @@
+window.location.replace("https://nightdev.com/betterttv/other/betterttv.user.js")

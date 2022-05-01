@@ -1,0 +1,1 @@
+window.location.replace("https://addons.opera.com/en/extensions/details/install-chrome-extensions/")
