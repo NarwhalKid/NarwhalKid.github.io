@@ -26,11 +26,11 @@ function change() {
    currentQ2.innerHTML = '): Sounds like that didnt help. Will you try a new method next time or try to use the same method more effectively next time?'
   }
   
-  if (currentQ == 'D: Sorry to hear that. Did you yuri today?') {
+  if (currentQ == 'D: Sorry to hear that. Did you yuri since the last time you took this quiz?') {
    currentQ2.innerHTML = 'NOOO! <img id="D" src="./D.png"> Did you try any methods of holding yourself back (like butterflies, messaging narwhal, or something else)?'
   }
   
-  if (currentQ == 'Did you have the urge to yuri today?') {
-   currentQ2.innerHTML = 'D: Sorry to hear that. Did you yuri today?'
+  if (currentQ == 'Did you have the urge to yuri since the last time you took this quiz?') {
+   currentQ2.innerHTML = 'D: Sorry to hear that. Did you yuri since the last time you took this quiz?'
   }
 }
