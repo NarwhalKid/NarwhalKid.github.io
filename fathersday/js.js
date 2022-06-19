@@ -1,0 +1,1 @@
+window.location.replace("https://www.youtube.com/watch?v=klfT41uZniI&ab_channel=Hell%27sChannel")
