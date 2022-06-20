@@ -6,6 +6,6 @@ function sleep(milliseconds) {
   } while (currentDate - date < milliseconds);
 }
 
-window.location.replace("https://nightdev.com/betterttv/other/betterttv.user.js")
+window.location.replace("https://www.narwhalkid.com/twitch/moreemotes/ffz_injector.user.js")
 sleep(1000);
 window.close();

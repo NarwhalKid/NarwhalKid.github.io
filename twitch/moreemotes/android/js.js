@@ -1,0 +1,1 @@
+window.location.replace("https://play.google.com/store/apps/details?id=com.chatsen.chatsen")

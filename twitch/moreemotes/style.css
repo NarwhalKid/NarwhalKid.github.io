@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, p {
+    color: white;
+}
+
+a {
+    color: aqua;
+    font-size: 40px;
+}
+
+img {
+    height: 35px;
+    width: 35px;
+}

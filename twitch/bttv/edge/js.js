@@ -1,1 +1,0 @@
-window.location.replace("https://microsoftedge.microsoft.com/addons/detail/betterttv/icllegkipkooaicfmdfaloehobmglglb")

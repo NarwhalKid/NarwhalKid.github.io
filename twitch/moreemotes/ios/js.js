@@ -1,0 +1,1 @@
+window.location.replace("https://apps.apple.com/us/app/chatsen/id1574037007")

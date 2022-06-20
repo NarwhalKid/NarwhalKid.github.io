@@ -1,1 +1,0 @@
-window.location.replace("https://chrome.google.com/webstore/detail/betterttv/ajopnjidmegmdimjlfnijceegpefgped")
