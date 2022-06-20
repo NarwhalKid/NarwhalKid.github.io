@@ -1,0 +1,1 @@
+window.location.replace("https://krunker.io/social.html?p=profile&q=Narwha1_Kid")

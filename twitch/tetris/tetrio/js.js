@@ -1,0 +1,1 @@
+window.location.replace("https://ch.tetr.io/u/yuri-simp")

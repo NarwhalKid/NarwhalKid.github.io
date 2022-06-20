@@ -1,0 +1,1 @@
+window.location.replace("https://www.chess.com/member/narwhal_kid")

@@ -1,0 +1,1 @@
+window.location.replace("https://lichess.org/@/Narwhal_Kid")

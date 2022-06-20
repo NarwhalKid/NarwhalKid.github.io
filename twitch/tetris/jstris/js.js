@@ -1,0 +1,1 @@
+window.location.replace("https://jstris.jezevec10.com/u/YURI-SIMP")

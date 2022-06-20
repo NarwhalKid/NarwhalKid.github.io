@@ -1,0 +1,1 @@
+window.location.replace("https://namemc.com/profile/Narwhal_Kid.2")
