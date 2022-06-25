@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Copy my discord</title>
+    <title>Discord Account</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="/images/nklogo-icon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" rel="stylesheet">
     <meta name="robots" content="noindex,nofollow" />
     <body style="background-color:black">
-        <button id="Copy">Copy my discord name!</button>
-        <br><br>
+        <button id="Copy">click anywhere to copy my discord name</button>
+        <div id="popup" class="tempClass"><p><b>copied to clipboard</b></p></div>
         <script type="text/javascript">
             function Clipboard_CopyTo(value) {
             var tempInput = document.createElement("input");
@@ -21,6 +24,21 @@
 
             document.querySelector('#Copy').onclick = function() {
             Clipboard_CopyTo('pıʞ ןɐɥʍɹɐN#0001');
+            popup()
+            }
+
+            function popup() {
+                if (document.getElementById('popup').className != 'fade2') {
+                    document.getElementById('popup').className = 'tempClass';
+                    setTimeout(() => {fade(2);}, 10);
+                } else {
+                    document.getElementById('popup').className = 'tempClass';
+                    setTimeout(() => {fade(1);}, 10);
+                }
+            }
+
+            function fade(num) {
+                document.getElementById('popup').className = 'fade' + num;
             }
         </script>
 
