@@ -20,41 +20,36 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
+function getCap(newNumb) {
+    if (newNumb == 1) {return 'Tetris 4 wide vs stickspin'}
+    if (newNumb == 2) {return 'Fox diving into concrete'}
+    if (newNumb == 3) {return 'Real time Drawpile joint with <a href="https://www.youtube.com/c/ElAnimsFrame" target="_blank">Frame</a>'}
+    if (newNumb == 4) {return 'Star Wars battle'}
+    if (newNumb == 5) {return 'Continuation to <a href="https://www.youtube.com/watch?v=Q5JNmHvMoj4&t=1s" target="_blank">this joint</a>'}
+}
+
+vs = 5
 
 function right() {
-    var video = document.getElementById('ifrm');
-    var cap = document.getElementById('caption');
-    if (video.innerHTML == '1') {
-        video.src = './video2.mp4';
-        video.innerHTML = '2';
-        cap.innerText = 'Fox diving into concrete';
-    } else if (video.innerHTML == '2') {
-        video.src = './video3.mp4';
-        video.innerHTML = '3';
-        cap.innerHTML = 'Real time Drawpile joint with <a href="https://www.youtube.com/c/ElAnimsFrame">Frame</a>';
-    } else if (video.innerHTML == '3') {
-        video.src = './video1.mp4';
-        video.innerHTML = '1';
-        cap.innerText = 'Tetris 4 wide vs stickspin';
+    if (parseInt(document.getElementById('ifrm').innerHTML) == vs) {
+        newNum = 1;
+    } else {
+        newNum = parseInt(document.getElementById('ifrm').innerHTML) + 1;
     }
+    document.getElementById('ifrm').src = './video' + newNum + '.mp4';
+    document.getElementById('ifrm').innerHTML = newNum;
+    document.getElementById('caption').innerHTML = getCap(newNum);
 }
 
 function left() {
-    var video = document.getElementById('ifrm');
-    var cap = document.getElementById('caption');
-    if (video.innerHTML == '1') {
-        video.src = './video3.mp4';
-        video.innerHTML = '3';
-        cap.innerHTML = 'Real time Drawpile joint with <a href="https://www.youtube.com/c/ElAnimsFrame">Frame</a>';
-    } else if (video.innerHTML == '2') {
-        video.src = './video1.mp4';
-        video.innerHTML = '1';
-        cap.innerText = 'Tetris 4 wide vs stickspin';
-    } else if (video.innerHTML == '3') {
-        video.src = './video2.mp4';
-        video.innerHTML = '2';
-        cap.innerText = 'Fox diving into concrete';
+    if (parseInt(document.getElementById('ifrm').innerHTML) == 1) {
+        newNum = vs;
+    } else {
+        newNum = parseInt(document.getElementById('ifrm').innerHTML) - 1;
     }
+    document.getElementById('ifrm').src = './video' + newNum + '.mp4';
+    document.getElementById('ifrm').innerHTML = newNum;
+    document.getElementById('caption').innerHTML = getCap(newNum);
 }
 
 
