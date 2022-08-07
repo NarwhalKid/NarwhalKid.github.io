@@ -3,7 +3,7 @@
 <!Easter egg>
   <head>
     <meta charset="utf-8">
-    <title>Games!</title>
+    <title>testing google</title>
     <link media="all" rel="stylesheet" href="./css.css">
     <link rel="shortcut icon" href="/images/nklogo-icon.ico">
   </head>
@@ -45,25 +45,27 @@
           // to decode the credential response.
           const responsePayload = decodeJwtResponse(response.credential);
           console.log("Email: " + responsePayload.email);
-          document.cookie = responsePayload.email;
+          document.cookie = "email=" + responsePayload.email + "; expires=Thu, 18 Dec 3000 12:00:00 UTC";
           }
        </script>
       <script>
-          let email = document.cookie.split(';')[0]
+          function getCookie(name) {
+  const value = `; ${document.cookie}`;
+  const parts = value.split(`; ${name}=`);
+  if (parts.length === 2) return parts.pop().split(';').shift();
+}
+          if (getCookie("email"){
+          let email = document.getCookie("email")
           console.log("Email cookie: " + email);
+          }
       </script>
 
 
 
-      <p style="color:white">Google test #:  15</p>
+      <p style="color:white">Google test #:  16</p>
 
       <p style="color:white">Lets hope this works</p>
 
-      <script>
-          if (email == "gavinmtomlinson@gmail.com") {
-            console.log("hi gavin")
-          }
-      </script>
 
       <br>
       <br>
