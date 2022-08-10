@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1vw;
+}
+
+h2 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vw;
+}
+
+p {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+}
+
+div {
+    color: white;
+}
+
+a {
+    color:aqua;
+}
