@@ -1,0 +1,31 @@
+:root {
+    --saturation-factor: 1;
+}
+
+@font-face {
+    font-family: "MainFont";
+    src: url("./MainFont.woff2") format('woff');
+}
+
+h2 {
+    font-family: Noto Sans JP;
+    color: hsl(216,calc(var(--saturation-factor, 1)*3.7%),73.5%);
+    font-size: 2.5em;
+    margin: 0
+}
+
+a {
+    color: hsl(197,calc(var(--saturation-factor, 1)*100%),47.8%);
+}
+
+h1 {
+    font-family: "MainFont";
+    color: hsl(216,calc(var(--saturation-factor, 1)*3.7%),73.5%);
+    font-size: 2.5em;
+}
+
+body {
+    background-color: hsl(225,calc(var(--saturation-factor, 1)*7.7%),10.2%);
+    margin-left: 2vw;
+}
+
