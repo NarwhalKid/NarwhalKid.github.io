@@ -1,0 +1,251 @@
+html,body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+  font-family: Poppins;
+}
+
+body {
+  background-color: #15042e;
+  color: white;
+}
+
+#main {
+  width:100%;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+:root {
+  --percent: 100;
+}
+
+#bg {
+  background-color: #310a6b;
+  width: 100vw;
+  height: 10px;
+  position: fixed;
+}
+
+#bar {
+  background-color: purple;
+  width: var(--percent);
+  height: 10px;
+  position: fixed;
+  transition-duration: 0s;
+  transition-timing-function: linear;
+}
+
+h3 {
+  margin-top: 10px;
+  cursor: pointer;
+  width:fit-content;
+}
+
+#aOrB {
+  display: none;
+  width: 100%;
+}
+
+#aOrB button {
+  background-color: #3f226b;
+  border: 0;
+  border-radius: 10px;
+  color: white;
+}
+
+.innerMain {
+  display: inline;
+}
+
+#three {
+  background-color: #3f226b;
+  color: white;
+  transition-duration: 2s;
+  border: 0;
+  border-radius: 10px;
+  z-index: 2;
+  display: absolute;
+}
+
+svg, #main21 {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
+
+  #main21 {
+    width:100%;
+  }
+
+.main2 {
+  
+   justify-content: center;
+  text-align: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition-duration: 700ms;
+  display:none;
+}
+
+button {
+  cursor: pointer;
+}
+
+
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+}
+
+td, th {
+  background-color: #577b57;
+  
+  text-align: center;
+}
+
+table, td, th {  
+  border: 1px solid #ddd;
+  
+}
+
+  .tableElem {
+    cursor: help;
+  }
+
+
+
+
+
+
+@media all and (orientation:landscape) {
+  #sched {
+  font-size: 3.5vw
+}
+
+  table {
+    width: 64vw;
+    height:16vw;
+  }
+  
+  #text {
+    font-size: 15vw
+  }
+  
+  #two {
+    font-size: 6vw
+  }
+  
+  td, th {
+    font-size:1.5vw;
+    padding: 1vw;
+  }
+  
+    #three:hover {
+      width: 21vw;
+    height: 6vw;
+      font-size: 1.5vw;
+      
+    }
+  
+  #three {
+    width: 20vw;
+    height: 6vw;
+    font-size: 1.4vw;
+  }
+
+  #aOrB button {
+    height: 34vw;
+  width: 34vw;
+  font-size: 11vw;
+}
+    #A {
+      margin-right:2vw;
+    }
+
+    #B {
+      margin-left: 2vw;
+    }
+
+  svg {
+    width: 8vw;
+    height: 8vw;
+  }
+}
+
+  @media all and (orientation:portrait) {
+    svg {
+    width: 30vw;
+    height: 30vw;
+  }
+#aOrB button {
+  
+    height: 34vw;
+  width: 34vw;
+  font-size: 11vw;
+}
+    #A {
+      margin-right:2vw;
+    }
+
+    #B {
+      margin-left: 2vw;
+    }
+    
+  #sched {
+  font-size: 3.5vw
+}
+
+  table {
+    width: 90vw;
+    height:40vw;
+  }
+  
+  #text {
+    font-size: 25vw
+  }
+  
+  #two {
+    font-size: 12vw
+  }
+  
+  td, th {
+    font-size:2vw;
+    padding: 0.7vw;
+  }
+  
+    #three:hover {
+      width: 63vw;
+    height: 15vw;
+      font-size: 4.5vw;
+      
+    }
+  
+  #three {
+    width: 60vw;
+    height: 12vw;
+    font-size: 4.2vw;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="./betterJsTimer.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <title>0:00:00</title>
+  <link href="./style.css" rel="stylesheet" type="text/css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+</head>
+
+<body>
+
+  <div class="main2" id="main21">
+    <svg onclick="if(menuAnim==0){closeSched()}" style="color: white" xmlns="http://www.w3.org/2000/svg" width="16"
+      height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+      <path
+        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+        fill="white"></path>
+    </svg>
+  </div>
+
+  <div class="innerMain">
+    <div id="bg"></div>
+    <div id="bar"></div>
+    <h3 id="day" onclick="changeDayPost()">Test</h3>
+  </div>
+  <div id="main">
+
+    <div id="aOrB">
+      <button id="A" onclick="setDay('A')">A Day</button>
+      <button id="B" onclick="setDay('B')">B Day</button>
+    </div>
+    <div class="innerMain">
+      <h1 id="text"></h1>
+      <h2 id="two"></h2>
+      <button id="three" onclick="if(menuAnim==0){openMenu()}">Open Full Schedule</button>
+    </div>
+  </div>
+  <div class="main2">
+
+    <h1 id="sched">
+      Schedule (Hover over a period for times)
+    </h1>
+    <table>
+      <tr>
+        <th></th>
+        <th>Homeroom</th>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+        <th>Lunch</th>
+        <th>3 Cont.</th>
+        <th>4</th>
+        <th>School End</th>
+      </tr>
+      <tr>
+        <th>A</th>
+      </tr>
+      <tr>
+        <th>B</th>
+      </tr>
+    </table>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
