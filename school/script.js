@@ -20,8 +20,8 @@ function countdown(seconds) {
         var something_cachedValue = something;
 
         function doStuff() {
-          if ((new Date).getSeconds() === something_cachedValue) {//we want it to match
-            setTimeout(doStuff, 50);//wait 50 millisecnds then recheck
+          if ((new Date).getSeconds() === something_cachedValue) {
+            setTimeout(doStuff, 50);
             return;
           }
           something_cachedValue = something;
@@ -62,6 +62,7 @@ function displayTime(seconds) {
   if (mins < 10) {
     mins = "0" + mins;
   }
+  document.title = hrs + ":" + mins + ":" + secs;
   text.innerHTML = hrs + ":" + mins + ":" + secs;
 }
 
@@ -317,3 +318,12 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
   mobile = 0
 }
+
+function logEvent(event) {
+  const time = new Date(event.detail).toTimeString().substr(0, 8);
+  console.log(event.type, time);
+};
+
+document.addEventListener('sleep', logEvent);
+document.addEventListener('wake', logEvent);
+
