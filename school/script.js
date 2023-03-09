@@ -1,22 +1,36 @@
 const text = document.getElementById('text')
 const r = document.querySelector(':root');
-
+menu = 0
 
 
 function countdown(seconds) {
   displayTime(seconds);
 
-  var i = 1
+  var i = 0
   function myLoop() {
-    setTimeout(function() {
-      displayTime(seconds - i);
-      i++;
-      if (i <= seconds) {
-        myLoop();
-      } else {
-        calcTimeSincePd();
+    displayTime(seconds - i);
+    i++;
+    if (i < seconds) {
+      if (menu == 0) {
+
+
+        var something = (new Date).getSeconds();
+        var something_cachedValue = something;
+
+        function doStuff() {
+          if ((new Date).getSeconds() === something_cachedValue) {//we want it to match
+            setTimeout(doStuff, 50);//wait 50 millisecnds then recheck
+            return;
+          }
+          something_cachedValue = something;
+          myLoop();
+        }
+
+        doStuff();
       }
-    }, 1000)
+    } else {
+      calcTimeSincePd();
+    }
   }
 
   myLoop();
@@ -54,15 +68,32 @@ function calcTimeSincePd(day) {
 
   // date = new Date('August 19, 1975 00:00:00');
   periodsC = [[0, 00, "No School"]]
-  periodsA = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 40, "French"], [9, 10, "Foundations of Technology"], [10, 40, "Algebra II"], [11, 05, "Lunch"], [11, 30, "Algebra II"], [12, 35, "Gym"], [14, 00, "No School"]]
-  periodsB = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 40, "Band"], [9, 10, "English"], [10, 40, "American Government"], [11, 35, "Lunch"], [12, 00, "American Government"], [12, 35, "Biology"], [14, 00, "No School"]]
+  periodsA = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 35, "Switching Classes"], [7, 40, "French"], [9, 05, "Switching Classes"], [9, 10, "Foundations of Technology"], [10, 35, "Switching Classes"], [10, 40, "Algebra II"], [11, 05, "Lunch"], [11, 30, "Algebra II"], [12, 30, "Switching Classes"], [12, 35, "Gym"], [14, 00, "No School"]]
+  periodsB = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 35, "Switching Classes"], [7, 40, "Band"], [9, 05, "Switching Classes"], [9, 10, "English"], [10, 35, "Switching Classes"], [10, 40, "American Government"], [11, 35, "Lunch"], [12, 00, "American Government"], [12, 30, "Switching Classes"], [12, 35, "Biology"], [14, 00, "No School"]]
 
-  if (date.getDay() == 1 || date.getDay() == 3 || day == "A") {
+  if (document.cookie[4] == "A") {
     periods = periodsA
+    if (date.getDay() == 5 || date.getDay() == 4) {
+      document.getElementById('day').innerText = "A Day*";
+    } else {
+      document.getElementById('day').innerText = "A Day";
+    }
+  } else if (document.cookie[4] == "B") {
+    periods = periodsB
+    if (date.getDay() == 1 || date.getDay() == 3) {
+      document.getElementById('day').innerText = "B Day*";
+    } else {
+      document.getElementById('day').innerText = "B Day";
+    }
+  } else if (date.getDay() == 1 || date.getDay() == 3 || day == "A") {
+    periods = periodsA
+    document.getElementById('day').innerText = "A Day";
   } else if (date.getDay() == 5 || date.getDay() == 4 || day == "B") {
     periods = periodsB
+    document.getElementById('day').innerText = "B Day";
   } else if (date.getDay() == 0 || date.getDay() == 6) {
     periods = periodsC
+    document.getElementById('day').innerText = "Weekend";
   } else {
     alert('aw i messed up the code somehow')
   }
@@ -109,9 +140,9 @@ function calcTimeSincePd(day) {
   document.getElementById('two').innerText = periods[period][2]
 }
 
-
+// heres the spot u can test the date in
 date = new Date();
-if (date.getDay() == 5) {
+if (date.getDay() == 5 && document.cookie == "") {
   document.getElementById('aOrB').style.display = "inline";
   document.getElementsByClassName('innerMain')[0].style.display = "none"
   document.getElementsByClassName('innerMain')[1].style.display = "none"
@@ -119,9 +150,18 @@ if (date.getDay() == 5) {
   calcTimeSincePd();
 }
 
+function changeDayPost() {
+  document.getElementById('aOrB').style.display = "inline";
+  document.getElementsByClassName('innerMain')[0].style.display = "none"
+  document.getElementsByClassName('innerMain')[1].style.display = "none"
+}
 
 function setDay(day) {
+
+  saveDay(day);
+
   document.getElementById('aOrB').style.display = "none";
+  document.getElementById('day').innerText = day + " Day";
   document.getElementsByClassName('innerMain')[0].style.display = "inline"
   document.getElementsByClassName('innerMain')[1].style.display = "inline"
 
@@ -131,16 +171,19 @@ function setDay(day) {
 }
 
 function openMenu() {
+  menu = 1;
 
   three = document.getElementById('three')
-  div = document.getElementById('main2')
+  div = document.getElementsByClassName('main2')[0]
+  div2 = document.getElementsByClassName('main2')[1]
 
   three.innerText = ""
 
   three.style.backgroundColor = "#689268";
   three.style.height = "200vh"
   three.style.width = "200vw"
-  div.style.display = "inline"
+  div.style.display = "inline-block"
+  div2.style.display = "inline-block"
 
   setTimeout(() => {
 
@@ -151,23 +194,105 @@ function openMenu() {
 
 
     div.style.opacity = "1"
+    div2.style.opacity = "1"
   }, 2000)
 
 }
 
 function fillTable() {
 
-  for (let i = 1; i <= 8; i++) {
+  fillAAndB(1)
+  fillAAndB(3)
+  fillAAndB(5)
+  fillAAndB(7)
+  fillAAndB(8)
+  fillAAndB(9)
+  fillAAndB(11)
+  fillAAndB(12)
+
+
+
+  function fillAAndB(i) {
+    AMins = periodsA[i][1]
+    BMins = periodsB[i][1]
+
+    if (AMins < 10) {
+      AMins = "0" + AMins
+    }
+    if (BMins < 10) {
+      BMins = "0" + BMins
+    }
 
     var row = document.getElementsByTagName("tr")[1];
     var x = row.insertCell(row.length);
-    x.innerHTML = "<span class='tableElem' title ='" + periodsA[i][0] + ":" + periodsA[i][1] + "'>" + periodsA[i][2] + "</span>";
+    x.innerHTML = "<span class='tableElem' title ='" + periodsA[i][0] + ":" + AMins + "'>" + periodsA[i][2] + "</span>";
 
     var row2 = document.getElementsByTagName("tr")[2];
     var x2 = row2.insertCell(row2.length);
-    x2.innerHTML = "<span class='tableElem' title ='" + periodsB[i][0] + ":" + periodsB[i][1] + "'>" + periodsB[i][2] + "</span>";
+    x2.innerHTML = "<span class='tableElem' title ='" + periodsB[i][0] + ":" + BMins + "'>" + periodsB[i][2] + "</span>";
   }
+
+
+
 }
 
 fillTable();
 
+function closeSched() {
+
+  three = document.getElementById('three')
+  div = document.getElementsByClassName('main2')[0]
+  div2 = document.getElementsByClassName('main2')[1]
+
+
+
+  document.getElementsByClassName('innerMain')[1].style.display = "inline";
+  document.getElementById('main').style.display = "inline";
+  div.style.opacity = "0"
+  div2.style.opacity = "0"
+
+
+
+
+
+
+  setTimeout(() => {
+    three.style.backgroundColor = "#3f226b";
+    three.style.height = null
+    three.style.width = null
+
+
+
+    document.getElementsByClassName('innerMain')[0].style.display = null
+    document.getElementById('main').style.display = null
+
+
+    div.style.display = null
+    div2.style.display = null
+
+    document.body.style.backgroundColor = "#15042e";
+
+    menu = 0;
+    calcTimeSincePd()
+
+    setTimeout(() => {
+      three.innerText = "Open Full Schedule";
+    }, 2500)
+
+
+
+  }, 700)
+}
+
+function saveDay(day) {
+  var now = new Date();
+  now.setSeconds(0)
+  now.setMinutes(0)
+  now.setHours(0)
+  now.setDate(now.getDate() + 1)
+
+  var expireTime = now
+  now.setTime(expireTime);
+  document.cookie = 'day=' + day + ';expires=' + now.toUTCString() + ';path=/';
+  console.log(document.cookie);
+}
