@@ -46,7 +46,7 @@ div:hover {
 }
 
 :root {
-    --highlight-color: #c08fff;
+    --highlight-color: hsl(0 100% 50%);
 }
 
 p {
