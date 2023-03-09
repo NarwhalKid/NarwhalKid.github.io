@@ -1,13 +1,15 @@
 const text = document.getElementById('text')
 const r = document.querySelector(':root');
 menu = 0
+menuAnim = 0
 
 
 function countdown(seconds) {
   displayTime(seconds);
 
   var i = 0
-  function myLoop() {
+  function myLoop(loopDay) {
+    dayy = document.getElementById('day').innerText[0]
     displayTime(seconds - i);
     i++;
     if (i < seconds) {
@@ -23,8 +25,9 @@ function countdown(seconds) {
             return;
           }
           something_cachedValue = something;
-          if (menu == 0){
-            myLoop();
+          console.log(loopDay + " " + dayy)
+          if (menu == 0 && dayy == loopDay) {
+            myLoop(dayy);
           }
         }
 
@@ -35,7 +38,7 @@ function countdown(seconds) {
     }
   }
 
-  myLoop();
+  myLoop(document.getElementById('day').innerText[0]);
 }
 
 function getPercent(length, total) {
@@ -174,6 +177,7 @@ function setDay(day) {
 
 function openMenu() {
   menu = 1;
+  menuAnim = 1
 
   three = document.getElementById('three')
   div = document.getElementsByClassName('main2')[0]
@@ -197,6 +201,9 @@ function openMenu() {
 
     div.style.opacity = "1"
     div2.style.opacity = "1"
+    setTimeout(() => {
+      menuAnim = 0
+    }, 700)
   }, 2000)
 
 }
@@ -225,13 +232,15 @@ function fillTable() {
       BMins = "0" + BMins
     }
 
+    // e
+
     var row = document.getElementsByTagName("tr")[1];
     var x = row.insertCell(row.length);
-    x.innerHTML = "<span class='tableElem' title ='" + periodsA[i][0] + ":" + AMins + "'>" + periodsA[i][2] + "</span>";
+    x.innerHTML = "<span class='tableElem' onclick=if(mobile==1){alert(\"" + periodsA[i][0] + ":" + AMins + "\")} title ='" + periodsA[i][0] + ":" + AMins + "'>" + periodsA[i][2] + "</span>";
 
     var row2 = document.getElementsByTagName("tr")[2];
     var x2 = row2.insertCell(row2.length);
-    x2.innerHTML = "<span class='tableElem' title ='" + periodsB[i][0] + ":" + BMins + "'>" + periodsB[i][2] + "</span>";
+    x2.innerHTML = "<span class='tableElem' onclick=if(mobile==1){alert(\"" + periodsB[i][0] + ":" + BMins + "\")} title ='" + periodsB[i][0] + ":" + BMins + "'>" + periodsB[i][2] + "</span>";
   }
 
 
@@ -241,6 +250,8 @@ function fillTable() {
 fillTable();
 
 function closeSched() {
+
+  menuAnim = 1
 
   three = document.getElementById('three')
   div = document.getElementsByClassName('main2')[0]
@@ -279,6 +290,7 @@ function closeSched() {
 
     setTimeout(() => {
       three.innerText = "Open Full Schedule";
+      menuAnim = 0
     }, 2500)
 
 
@@ -297,4 +309,11 @@ function saveDay(day) {
   now.setTime(expireTime);
   document.cookie = 'day=' + day + ';expires=' + now.toUTCString() + ';path=/';
   console.log(document.cookie);
+}
+
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  mobile = 1
+  document.getElementById('sched').innerText = "Schedule (Click on a period for times)"
+} else {
+  mobile = 0
 }
