@@ -23,7 +23,9 @@ function countdown(seconds) {
             return;
           }
           something_cachedValue = something;
-          myLoop();
+          if (menu == 0){
+            myLoop();
+          }
         }
 
         doStuff();
