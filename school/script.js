@@ -27,7 +27,7 @@ function countdown(seconds) {
           something_cachedValue = something;
           console.log(loopDay + " " + dayy)
           if (menu == 0 && dayy == loopDay) {
-            myLoop(dayy);
+            calcTimeSincePd();
           }
         }
 
@@ -318,12 +318,4 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 } else {
   mobile = 0
 }
-
-function logEvent(event) {
-  const time = new Date(event.detail).toTimeString().substr(0, 8);
-  console.log(event.type, time);
-};
-
-document.addEventListener('sleep', logEvent);
-document.addEventListener('wake', logEvent);
 
