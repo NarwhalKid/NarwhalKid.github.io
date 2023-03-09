@@ -13,6 +13,7 @@ body {
 }
 
 #main {
+  width:100%;
   justify-content: center;
   text-align: center;
   margin: 0;
@@ -50,8 +51,22 @@ body {
   transition-timing-function: linear;
 }
 
+h3 {
+  margin-top: 10px;
+  cursor: pointer;
+  width:fit-content;
+}
+
 #aOrB {
   display: none;
+  width: 100%;
+}
+
+#aOrB button {
+  background-color: #3f226b;
+  border: 0;
+  border-radius: 10px;
+  color: white;
 }
 
 .innerMain {
@@ -68,9 +83,18 @@ body {
   display: absolute;
 }
 
+svg, #main21 {
+  cursor: pointer;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+}
 
+  #main21 {
+    width:100%;
+  }
 
-#main2 {
+.main2 {
   
    justify-content: center;
   text-align: center;
@@ -151,9 +175,45 @@ table, td, th {
     height: 6vw;
     font-size: 1.4vw;
   }
+
+  #aOrB button {
+    height: 34vw;
+  width: 34vw;
+  font-size: 11vw;
+}
+    #A {
+      margin-right:2vw;
+    }
+
+    #B {
+      margin-left: 2vw;
+    }
+
+  svg {
+    width: 8vw;
+    height: 8vw;
+  }
 }
 
   @media all and (orientation:portrait) {
+    svg {
+    width: 30vw;
+    height: 30vw;
+  }
+#aOrB button {
+  
+    height: 34vw;
+  width: 34vw;
+  font-size: 11vw;
+}
+    #A {
+      margin-right:2vw;
+    }
+
+    #B {
+      margin-left: 2vw;
+    }
+    
   #sched {
   font-size: 3.5vw
 }
