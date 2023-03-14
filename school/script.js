@@ -79,7 +79,7 @@ function calcTimeSincePd(day) {
 
   if (document.cookie[4] == "A") {
     periods = periodsA
-    if (date.getDay() == 5 || date.getDay() == 4) {
+    if (date.getDay() == 2 || date.getDay() == 4) {
       document.getElementById('day').innerText = "A Day*";
     } else {
       document.getElementById('day').innerText = "A Day";
@@ -94,7 +94,7 @@ function calcTimeSincePd(day) {
   } else if (date.getDay() == 1 || date.getDay() == 3 || day == "A") {
     periods = periodsA
     document.getElementById('day').innerText = "A Day";
-  } else if (date.getDay() == 5 || date.getDay() == 4 || day == "B") {
+  } else if (date.getDay() == 2 || date.getDay() == 4 || day == "B") {
     periods = periodsB
     document.getElementById('day').innerText = "B Day";
   } else if (date.getDay() == 0 || date.getDay() == 6) {
@@ -248,7 +248,7 @@ function fillTable() {
 
 }
 
-fillTable();
+
 
 function closeSched() {
 
@@ -319,3 +319,14 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
   mobile = 0
 }
 
+function fillLoop() {
+  if (periodsA && periodsB) {
+    fillTable();
+  } else {
+    setTimeout(() => {
+      fillLoop()
+    }, 100)
+  }
+}
+
+fillLoop();
