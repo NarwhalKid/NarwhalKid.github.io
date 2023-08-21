@@ -42,7 +42,7 @@
     btn.onclick = () => {
       fetch("https://nkinfo.narwhalkid.repl.co/", {
         method: "GET"
-      }).then(((response) => {
+      }).then((response) => {
         if (response.text() == "Yes") {
           alert('Alert sent')
         } else {
