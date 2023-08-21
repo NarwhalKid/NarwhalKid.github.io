@@ -40,7 +40,7 @@
   <script>
     const btn = document.getElementById('btn');
     btn.onclick = () => {
-      fetch("https://nkinfo.narwhalkid.repl.co/", {
+      fetch("https://nkinfo.narwhalkid.repl.co/alert", {
         method: "GET"
       }).then((response) => {
         if (response.text() == "Yes") {
