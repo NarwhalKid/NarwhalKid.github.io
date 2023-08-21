@@ -40,10 +40,10 @@
   <script>
     const btn = document.getElementById('btn');
     btn.onclick = () => {
-      fetch("https://trigger.macrodroid.com/8ccae507-fb5d-4793-b216-17f303a893df/alarmtime", {
+      fetch("https://nkinfo.narwhalkid.repl.co/", {
         method: "GET"
-      }).then((response) => {
-        if (response.ok == true) {
+      }).then(((response) => {
+        if (response.text() == "Yes") {
           alert('Alert sent')
         } else {
           alert('Alert failed to send')
