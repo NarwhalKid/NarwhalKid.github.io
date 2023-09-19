@@ -74,9 +74,9 @@ function calcTimeSincePd(day) {
 
   // date = new Date('August 19, 1975 00:00:00');
   periodsC = [[0, 00, "No School"]]
-  periodsA = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 35, "Switching Classes"], [7, 40, "French"], [9, 05, "Switching Classes"], [9, 10, "Foundations of Technology"], [10, 35, "Switching Classes"], [10, 40, "Algebra II"], [11, 05, "Lunch"], [11, 30, "Algebra II"], [12, 30, "Switching Classes"], [12, 35, "Gym"], [14, 00, "No School"]]
-  periodsB = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 35, "Switching Classes"], [7, 40, "Band"], [9, 05, "Switching Classes"], [9, 10, "English"], [10, 35, "Switching Classes"], [10, 40, "American Government"], [11, 35, "Lunch"], [12, 00, "American Government"], [12, 30, "Switching Classes"], [12, 35, "Biology"], [14, 00, "No School"]]
-
+  periodsA = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 40, "Switching Classes"], [7, 45, "Health II"], [9, 10, "Switching Classes"], [9, 15, "Band"], [10, 40, "Switching Classes"], [10, 45, "Hnr Trigonometry"], [11, 08, "Lunch"], [11, 35, "Hnr Trigonometry"], [12, 30, "Switching Classes"], [12, 35, "World History"], [14, 00, "No School"]]
+  periodsB = [[0, 00, "No School"], [7, 25, "Homeroom"], [7, 40, "Switching Classes"], [7, 45, "French II"], [9, 10, "Switching Classes"], [9, 15, "Physics & Chemistry"], [10, 40, "Switching Classes"], [10, 45, "Fine Art Prep"], [10, 45, "Lunch"], [11, 10, "Fine Art Prep"], [12, 30, "Switching Classes"], [12, 35, "Hnr English II"], [14, 00, "No School"]]
+  
   if (document.cookie[4] == "A") {
     periods = periodsA
     if (date.getDay() == 2 || date.getDay() == 4) {
