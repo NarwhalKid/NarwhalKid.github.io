@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<!Easter egg>
+<head>
+    <meta charset="utf-8">
+    <title>NarwhalKid.com</title>
+    <meta name="color-scheme" content="light only">
+    <link rel="shortcut icon" href="images/nklogo-icon.ico">
+    <meta name="google-site-verification" content="mfhj1WqmsahM3kPfumlTGHBiuUzHwITWPB9IaNiU4K4" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4VQ30KFEMT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-4VQ30KFEMT');
+    </script>
+
+    <h1>NarwhalKid's Accounts</h1>
+    <div>
+        <a href="./links/youtube/" target="_blank"><p>YouTube</p></a>
+    </div>
+    <div>
+        <a href="./links/reddit/" target="_blank"><p>Reddit</p></a>
+    </div>
+    <div>
+        <a href="./links/steam/" target="_blank"><p>Steam</p></a>
+    </div>
+    <div>
+        <a href="./links/twitch/" target="_blank"><p>Twitch</p></a>
+    </div>
+    <div>
+        <a href="./links/github/" target="_blank"><p>Github</p></a>
+    </div>
+    <div>
+        <a href="./links/twitter/" target="_blank"><p>Twitter</p></a>
+    </div>
+    <div style="margin-bottom: 53.6px">
+        <a href="./links/discord/" target="_blank"><p>Discord</p></a>
+    </div>
+    <script>
+        i = 0
+            function changeColor(){
+                i++;
+                if (i < 360) {
+                
+
+                    var r = document.querySelector(':root');
+                    var rs = getComputedStyle(r);
+                    rs.getPropertyValue('--highlightColor')
+                    
+                    r.style.setProperty('--highlight-color', 'hsl(' + i + ' 100% 50%');
+
+                    setTimeout(()=>{
+                        changeColor()
+                    },30)
+                
+                } else {
+                    i = 0
+                    changeColor()
+                }
+            }
+        changeColor()
+
+    </script>
+</body>
+</html>
