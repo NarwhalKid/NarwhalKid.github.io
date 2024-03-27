@@ -211,6 +211,7 @@ function setupCanvas() {
 
 
 function keyPressed() {
+    console.log(keyCode)
     switch(key){
         case ' ':
             player.jumpHeld = true
@@ -225,13 +226,19 @@ function keyPressed() {
             fallSound.stop();
             break;
     }
-
+    
     switch (keyCode) {
         case LEFT_ARROW:
             player.leftHeld = true;
             break;
+        case 'A':
+            player.leftHeld = true;
+            break;
         case RIGHT_ARROW:
             player.rightHeld = true;
+            break;
+        case 'D':
+            player.leftHeld = true;
             break;
     }
 
@@ -258,7 +265,7 @@ function keyReleased() {
             break;
         case 'N':
             if (creatingLines) {
-                levelNumber += 1;
+                levelNumber = levelNumber;
                 linesString += '\nlevels.push(tempLevel);';
                 linesString += '\ntempLevel = new Level();';
                 print(linesString);
@@ -267,7 +274,7 @@ function keyReleased() {
                 mousePos1 = null;
                 mousePos2 = null;
             } else {
-                player.currentLevelNo += 1;
+                player.currentLevelNo = player.currentLevelNo;
                 print(player.currentLevelNo);
             }
             break;
@@ -281,10 +288,16 @@ function keyReleased() {
 
     switch (keyCode) {
         case LEFT_ARROW:
-            player.leftHeld = false;
+            player.leftHeld = true;
+            break;
+        case 'A':
+            player.leftHeld = true;
             break;
         case RIGHT_ARROW:
-            player.rightHeld = false;
+            player.rightHeld = true;
+            break;
+        case 'D':
+            player.leftHeld = true;
             break;
     }
 }

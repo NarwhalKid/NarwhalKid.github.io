@@ -251,7 +251,13 @@ function keyPressed() {
         case LEFT_ARROW:
             player.leftHeld = true;
             break;
+        case 65:
+            player.leftHeld = true;
+            break;
         case RIGHT_ARROW:
+            player.rightHeld = true;
+            break;
+        case 68:
             player.rightHeld = true;
             break;
     }
@@ -290,7 +296,7 @@ function keyReleased() {
             break;
         case 'N':
             if (creatingLines) {
-                levelNumber += 1;
+                levelNumber = levelNumber;
                 linesString += '\nlevels.push(tempLevel);';
                 linesString += '\ntempLevel = new Level();';
                 print(linesString);
@@ -299,7 +305,7 @@ function keyReleased() {
                 mousePos1 = null;
                 mousePos2 = null;
             } else {
-                player.currentLevelNo += 1;
+                player.currentLevelNo = player.currentLevelNo;
                 print(player.currentLevelNo);
             }
             break;
@@ -315,7 +321,13 @@ function keyReleased() {
         case LEFT_ARROW:
             player.leftHeld = false;
             break;
+        case 65:
+            player.leftHeld = false;
+            break;
         case RIGHT_ARROW:
+            player.rightHeld = false;
+            break;
+        case 68:
             player.rightHeld = false;
             break;
         case DOWN_ARROW:
