@@ -1121,6 +1121,10 @@ class Player {
             this.currentLevelNo += 1;
             this.currentPos.y += height;
 
+            localStorage.setItem("level", this.currentLevelNo)
+            localStorage.setItem("playerX", this.currentPos.y)
+            localStorage.setItem("playerY", this.currentPos.x)
+
 
         } else if (this.currentPos.y > height - this.height) {
             if (this.currentLevelNo === 0) {
@@ -1139,8 +1143,11 @@ class Player {
                 this.hasFinishedInstructions = true;
             }
 
+            localStorage.setItem("level", this.currentLevelNo)
+            localStorage.setItem("playerX", this.currentPos.y)
+            localStorage.setItem("playerY", this.currentPos.x)
         }
-
+        console.log(localStorage)
 
     }
 
