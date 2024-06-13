@@ -13,7 +13,9 @@
 .button-yellow { background-color: var(--yellow); }
 .button-green { background: var(--green); }
 
-
+body {
+    background: black;
+}
 
 /* Styling */
 
@@ -29,7 +31,7 @@ h1 {
     text-align: center;
     margin: 50px 0px 10px 0px;
     font-family: 'Gentium Basic', serif;
-    color: #333;
+    color: #d3d3d3;
 }
 
 .board-container {
@@ -181,6 +183,7 @@ h1 {
 }
 
 .fg {
+    opacity: 0;
     flex-grow: 1;
     width: 50px;
 }

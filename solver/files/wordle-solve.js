@@ -235,7 +235,7 @@ const domContainer = document.querySelector('#code_container');
 ReactDOM.render(e(WordleSolver), domContainer);
 
 
-while (true) {
+  for (let i = 0; i < 6; i++) {
     try {
         document.getElementsByClassName("board-submit")[0].click()
     } catch (e) {
