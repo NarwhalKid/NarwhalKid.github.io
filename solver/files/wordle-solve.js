@@ -234,3 +234,12 @@ class WordleSolver extends React.Component {
 const domContainer = document.querySelector('#code_container');
 ReactDOM.render(e(WordleSolver), domContainer);
 
+
+while (true) {
+    try {
+        document.getElementsByClassName("board-submit")[0].click()
+    } catch (e) {
+      break; 
+    }
+  }
+
