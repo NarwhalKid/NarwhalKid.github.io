@@ -95,24 +95,34 @@ class WordleSolver extends React.Component {
 
     function compareWords(answer, guess) {
         if (answer.length !== 5 || guess.length !== 5) {
-            throw new Error("Input words must be exactly 5 letters long.");
+          throw new Error("Input words must be exactly 5 letters long.");
         }
-    
-        let result = [];
-    
-        // Compare each letter in guess with corresponding letter in answer
+      
+        let result = Array(5).fill(0); // Initialize result array with 0s
+        let answerCount = {}; // To keep track of letter counts in the answer
+      
+        // First pass: Mark all greens and count letters in the answer
         for (let i = 0; i < 5; i++) {
-            if (guess[i] === answer[i]) {
-                result.push(2); // Correct letter in correct position (green)
-            } else if (answer.includes(guess[i])) {
-                result.push(1); // Correct letter in wrong position (yellow)
-            } else {
-                result.push(0); // Letter not in answer (gray)
-            }
+          if (guess[i] === answer[i]) {
+            result[i] = 2; // Correct letter in correct position (green)
+          } else {
+            // Count each letter in the answer
+            answerCount[answer[i]] = (answerCount[answer[i]] || 0) + 1;
+          }
         }
-    
+      
+        // Second pass: Mark yellows and grays
+        for (let i = 0; i < 5; i++) {
+          if (result[i] !== 2) { // Skip already marked greens
+            if (answerCount[guess[i]]) {
+              result[i] = 1; // Correct letter in wrong position (yellow)
+              answerCount[guess[i]]--; // Decrement count for matched letter
+            }
+          }
+        }
+      
         return result;
-    }
+      }
     
 
       let { bestWords, guesses, treePositions, hardMode } = this.state
