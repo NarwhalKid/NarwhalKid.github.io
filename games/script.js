@@ -47,12 +47,54 @@ function makeNewGameBox(dispName, link, isIfrm) {
 // load games from github js file
 
 
-games = [["narwhalgpt", "https://chat.narwhalkid.com/", "1"], ["2048Verse", "https://2048verse.com/", "1"], ["pizza tower", "./game/pizzatower", "1"], ["jump king", "./game/jumpking", "1"], ["basket random", "./game/basketrandom/", "1"], ["boxing random", "./game/boxingrandom/", "1"], ["bitlife", "./game/bitlife/", "1"], ["flappy bird", "./game/flappybird/", "1"], ["google feud", "./game/googlefeud/", "1"], ["idle breakout", "./game/idlebreakout/", "1"], ["jetpack joyride", "./game/jetpackjoyride/", "1"], ["madalin stunt cars 2", "./game/msc2/", "1"], ["madalin stunt cars 3", "./game/msc3/", "1"], ["papas burgeria", "./game/papasburgeria/", "1"], ["papas pizzaria", "./game/papaspizzaria/", "1"], ["paper.io 2", "./game/paperio2/", "1"], ["retrobowl", "./game/retrobowl/", "1"], ["retrobowl college", "./game/retrobowlcollege/", "1"], ["slope", "./game/slope/", "1"], ["soccer random", "./game/soccerrandom/", "1"], ["super mario 64", "./game/sm64/", "1"], ["stack", "./game/stack/", "1"], ["subway surfers", "./game/subwaysurfers/", "1"], ["superhot", "./game/superhot/", "1"], ["tanuki sunset", "./game/tanukisunset/", "1"], ["temple run 2", "./game/templerun2/", "1"], ["this is the only level", "./game/thisistheonlylevel/", "1"],  ["this is the only level 2", "./game/thisistheonlyleveltoo/", "1"], ["tiny fishing", "./game/tinyfishing/", "1"], ["wolfenstein 3d", "./game/wolf3d/", "1"], ["wordle", "./game/wordle/", "1"], ["volley random", "./game/volleyrandom/", "1"], ["rooftop snipers", "./game/rooftopsnipers/", "1"], ["rooftop snipers 2", "./game/rooftopsnipers2/", "1"], ["crossy road", "./game/crossyroad/", "1"], ["jstris", "./game/jstris/", "1"]]
+games = [
+  ["narwhalgpt", "https://chat.narwhalkid.com/"], 
+  ["2048Verse", "https://2048verse.com/"], 
+  ["minecraft", "./game/minecraft"], 
+  ["drift hunters", "./game/drifthunters"], 
+  ["friday night funkin", "./game/fridaynightfunkin"], 
+  ["cookie clicker", "./game/cookieclicker"], 
+  ["getaway shootout", "./game/getawayshootout"], 
+  ["achievement unlock...", "./game/achievementunlocked"], 
+  ["pizza tower", "./game/pizzatower"], 
+  ["jump king", "./game/jumpking"], 
+  ["basket random", "./game/basketrandom/"],
+  ["boxing random", "./game/boxingrandom/"],
+  ["bitlife", "./game/bitlife/"],
+  ["flappy bird", "./game/flappybird/"],
+  ["google feud", "./game/googlefeud/"],
+  ["idle breakout", "./game/idlebreakout/"],
+  ["jetpack joyride", "./game/jetpackjoyride/"],
+  ["madalin stunt cars 2", "./game/msc2/"],
+  ["madalin stunt cars 3", "./game/msc3/"],
+  ["papas burgeria", "./game/papasburgeria/"],
+  ["papas pizzaria", "./game/papaspizzaria/"],
+  ["paper.io 2", "./game/paperio2/"],
+  ["retrobowl", "./game/retrobowl/"],
+  ["retrobowl college", "./game/retrobowlcollege/"],
+  ["slope", "./game/slope/"],
+  ["soccer random", "./game/soccerrandom/"],
+  ["super mario 64", "./game/sm64/"],
+  ["stack", "./game/stack/"],
+  ["subway surfers", "./game/subwaysurfers/"],
+  ["superhot", "./game/superhot/"],
+  ["tanuki sunset", "./game/tanukisunset/"],
+  ["temple run 2", "./game/templerun2/"],
+  ["this is the only level", "./game/thisistheonlylevel/"],  ["this is the only level 2", "./game/thisistheonlyleveltoo/"],
+  ["tiny fishing", "./game/tinyfishing/"],
+  ["wolfenstein 3d", "./game/wolf3d/"],
+  ["wordle", "./game/wordle/"],
+  ["volley random", "./game/volleyrandom/"],
+  ["rooftop snipers", "./game/rooftopsnipers/"],
+  ["rooftop snipers 2", "./game/rooftopsnipers2/"],
+  ["crossy road", "./game/crossyroad/"],
+  ["jstris", "./game/jstris/"],
+]
 
 function loadGames() {
   document.querySelectorAll('.game').forEach((element) => { element.remove() })
   games.forEach((element) => {
-    makeNewGameBox(element[0], element[1], element[2])
+    makeNewGameBox(element[0], element[1])
   })
 }
 
