@@ -2,11 +2,9 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <title>1v1.LOL Unblocked Game</title>
-    <meta name="description" content="Discover 1v1.LOL, the online building simulator & third person shooting game. Battle royale, build fight, box fight, zone wars, and more game modes to enjoy!" />
-    <meta name="keywords" content="1v1 LOL, just build, building simulator, online battle royale, third person shooter, free online games, zone wars, box fight, build fight" />
+    
+    <title>1v1.LOL</title>
     <meta name="google-adsense-account" content="ca-pub-3720612299124178">
-
     <script src="js/googleAnalytics.js"></script>
     <script src="lib/jquery.min.js"></script>
     <script src="js/IronSourceRV.js"></script>
@@ -90,51 +88,64 @@
     </script>
     <!-- MIDROLL/INTERSTITIAL VIDEO API -->
     <script src="js/cpmstar.js"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      .game-container {
+        display: flex;
+        flex: 1;
+      }
+      .side-ad {
+        width: 160px;
+        height: 100vh;
+        background-color: #f0f0f0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #gameContainer {
+        flex: 1;
+      }
+      .function-buttons {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        background-color: #f0f0f0;
+      }
+      .function-buttons button {
+        margin: 0 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+      }
+    </style>
   </head>
 
   <body>
-    <div class="ads">
-      <div class="ad-smallscreen">
-        <div class="ad ad-rectangle-bottom"></div>
+    <div class="game-container">
+      <div class="side-ad">
+        <!-- Left side ad -->
+        <div id="leftSideAd"></div>
       </div>
-      <div class="ad ad-rectangle-upper" id="adRectangleUpper">
-        <!-- 300X250B PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
-        <script>
-          (function (w, pid) {
-            var r = function (c, m) {
-                c = c.split("").reduce(function (a, b) {
-                  return ((a << 5) - a + b.charCodeAt(0)) >>> m;
-                }, 0);
-                return (10 + ((c * 7) % 26)).toString(36) + c.toString(36);
-              },
-              y = r(w.location.href.split("#")[0], 1),
-              c = r(w.location.href.split("#")[0] + pid, 0);
-            w.document.write('<div style="width:300px;height:250px" class="' + c + '"></div>');
-          })(window, 83023);
-        </script>
-      </div>
-      <div class="ad-largescreen">
-        <div class="ad ad-leaderboard-bottom">
-          <!-- 300X600B PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
-          <script>
-            (function (w, pid) {
-              var r = function (c, m) {
-                  c = c.split("").reduce(function (a, b) {
-                    return ((a << 5) - a + b.charCodeAt(0)) >>> m;
-                  }, 0);
-                  return (10 + ((c * 7) % 26)).toString(36) + c.toString(36);
-                },
-                y = r(w.location.href.split("#")[0], 1),
-                c = r(w.location.href.split("#")[0] + pid, 0);
-              w.document.write('<div style="width:300px;height:600px" class="' + c + '"></div>');
-            })(window, 85420);
-          </script>
-        </div>
+
+      <div id="gameContainer"></div>
+
+      <div class="side-ad">
+        <!-- Right side ad -->
+        <div id="rightSideAd"></div>
       </div>
     </div>
 
-    <!-- <div id="interAdsContainer" style="display: none;"></div> -->
-    <div id="gameContainer"></div>
+    <div class="function-buttons">
+      <button onclick="shareGame()">Share</button>
+      <button onclick="toggleFullscreen()">Fullscreen</button>
+      <button onclick="window.open('https://classroom6x-premium.github.io/', '_blank')">More Games</button>
+    </div>
+
     <div id="loader">
       <img class="logo" src="logo.png" />
       <div class="spinner"></div>
@@ -144,9 +155,8 @@
     </div>
 
     <script id="unity-loader" src="UnityLoader.js"></script>
-    <!--<script src="Build/UnityLoader.js"></script>-->
     <script>
-      var gameJsonUrl = "https://justbuild.nyc3.cdn.digitaloceanspaces.com/CI/1v1/Prod/162/WebGL.json"; //%gameJsonUrl
+      var gameJsonUrl = "https://justbuild.nyc3.cdn.digitaloceanspaces.com/CI/1v1/Prod/162/WebGL.json";
       var hostname = window.location.hostname;
       if (hostname.indexOf("dev1v1") >= 0 || hostname.indexOf("dev.1v1") >= 0 || hostname.indexOf("test1v1") >= 0 || hostname.indexOf("test.1v1") >= 0) {
         let urlParams = new URLSearchParams(window.location.search);
@@ -157,8 +167,6 @@
         }
       }
       var gameInstance = UnityLoader.instantiate("gameContainer", gameJsonUrl, { onProgress: UnityProgress });
-      //var gameInstance = UnityLoader.instantiate("gameContainer", "Build/WebGL.json", {onProgress: UnityProgress});
-
       window.unityInstance = gameInstance;
       var lockedOccured = false;
 
@@ -201,111 +209,42 @@
         }
       }
 
-      window.addEventListener("resize", injectAdByWindowSize);
-
-      function injectAdByWindowSize() {
-        // Inject small ad if screen is small, or large ad if screen is large
-        if (window.innerHeight < 900) {
-          if (document.getElementById("adRectangleBottom") == null) {
-            var el = document.getElementsByClassName("ad-rectangle-bottom")[0];
-            el.id = "adRectangleBottom";
-            cpmstarAPI({ kind: "go", module: "POOL 83025", config: { conditions: { target: { el: el, kind: "replace" } } } });
-          }
+      // Function to share the game
+      function shareGame() {
+        if (navigator.share) {
+          navigator.share({
+            title: '1v1.LOL',
+            text: 'Check out this awesome game!',
+            url: window.location.href,
+          })
+            .then(() => console.log('Successful share'))
+            .catch((error) => console.log('Error sharing', error));
         } else {
-          if (document.getElementById("adLeaderboardBottom") == null) {
-            var el = document.getElementsByClassName("ad-leaderboard-bottom")[0];
-            el.id = "adLeaderboardBottom";
-            cpmstarAPI({ kind: "go", module: "POOL 85420", config: { conditions: { target: { el: el, kind: "replace" } } } });
+          alert('Sharing is not supported on this browser, but you can copy the URL to share.');
+        }
+      }
+
+      // Function to toggle fullscreen
+      function toggleFullscreen() {
+        if (!document.fullscreenElement) {
+          document.documentElement.requestFullscreen();
+        } else {
+          if (document.exitFullscreen) {
+            document.exitFullscreen();
           }
         }
       }
 
-      injectAdByWindowSize();
-
-      var refreshNextTime = true;
-
-      function showAds() {
-        document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "block";
-        document.getElementsByClassName("ad-leaderboard-bottom")[0].style.display = "block";
-        document.getElementById("adRectangleUpper").style.display = "block";
-
-        if (typeof counter === "undefined") {
-          startCounter();
-          resumeCounter();
-        } else {
-          resumeCounter();
-          refresh();
-        }
-      }
-
-      function hideAds() {
-        document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "none";
-        document.getElementsByClassName("ad-leaderboard-bottom")[0].style.display = "none";
-        document.getElementById("adRectangleUpper").style.display = "none";
-
-        pauseCounter();
-      }
-
-      // hide ads
-      hideAds();
-
-      function refresh() {
-        //console.log("time since ads refresh = " + timeSinceRefresh + " seconds");
-        //console.log("time ads visible = " + timeAdsVisible + " seconds");
-
-        if (timeSinceRefresh <= 30 || timeAdsVisible <= 2) {
-          //console.log("don't refresh");
-          return;
-        }
-
-        if (document.getElementById("adRectangleBottom") != null && window.getComputedStyle(document.getElementsByClassName("ad-smallscreen")[0]).display != "none") {
-          cpmstarAPI({ kind: "adcmd", module: "POOL 83023", command: "refresh" });
-        }
-
-        if (document.getElementById("adLeaderboardBottom") != null && window.getComputedStyle(document.getElementsByClassName("ad-largescreen")[0]).display != "none") {
-          cpmstarAPI({ kind: "adcmd", module: "POOL 85420", command: "refresh" });
-        }
-
-        cpmstarAPI({ kind: "adcmd", module: "POOL 83025", command: "refresh" });
-
-        timeSinceRefresh = 0;
-        timeAdsVisible = 0;
-        //console.log("refresh ads");
-      }
-
-      window.onfocus = function () {
-        //console.log("onfocus");
-        resumeCounter();
-        refresh();
-      };
-
-      window.onblur = function () {
-        //console.log("onblur");
-        pauseCounter();
-      };
-
-      var timeSinceRefresh = 0;
-      var timeAdsVisible = 0;
-      var counter;
-      var adsVisible = false;
-
-      function startCounter() {
-        timeSinceRefresh++;
-        if (adsVisible) timeAdsVisible++;
-
-        counter = setTimeout(function () {
-          startCounter();
-        }, 1000);
-      }
-
-      function resumeCounter() {
-        adsVisible = true;
-      }
-
-      function pauseCounter() {
-        adsVisible = false;
-      }
+      // Load ads for side panels
+      window.addEventListener('load', function() {
+        // Load left side ad
+        cpmstarAPI({kind:'go', module:'POOL 83023', config: {conditions: {target: {el: document.getElementById('leftSideAd'), kind: 'replace'}}}});
+        
+        // Load right side ad
+        cpmstarAPI({kind:'go', module:'POOL 83023', config: {conditions: {target: {el: document.getElementById('rightSideAd'), kind: 'replace'}}}});
+      });
     </script>
+
     <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
     <script src="firebase/firebase-app.js"></script>
 

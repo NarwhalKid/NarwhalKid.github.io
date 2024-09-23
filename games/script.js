@@ -49,6 +49,7 @@ function makeNewGameBox(dispName, link, isIfrm) {
 
 games = [
   ["narwhalgpt", "https://chat.narwhalkid.com/"], 
+  ["1v1.lol", "./game/1v1lol/"], 
   ["2048Verse", "https://2048verse.com/"], 
   ["minecraft", "./game/minecraft"], 
   ["drift hunters", "./game/drifthunters"], 
