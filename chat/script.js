@@ -84,6 +84,7 @@ function useLocalLogs() {
 if (!!localStorage.getItem("logs")) {
   chatLog = JSON.parse(localStorage.logs);
   if(!!localStorage.currentChat) {
+    alert("Type \"$help\" to view all commands.")
     currentChat = localStorage.currentChat
   } else {
     currentChat = Object.keys(chatLog)[0]
