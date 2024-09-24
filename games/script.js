@@ -54,7 +54,7 @@ games = [
   ["gba games", "/emulators/gba"], 
   ["unrestricted youtube", "https://inv.nadeko.net/feed/popular"], 
   ["sandtris", "./game/sandtris/"], 
-  ["doom", "./game/doom/"], 
+  // ["doom", "./game/doom/"], 
   ["tube jumpers", "./game/tubejumpers/"], 
   ["papas sushiria", "./game/papassushiria/"], 
   ["this is the only level", "./game/thisistheonlylevel/"],  
