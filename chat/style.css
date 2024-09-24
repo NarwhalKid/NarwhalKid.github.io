@@ -1,0 +1,271 @@
+@font-face {
+  font-family: Söhne;
+  src: url(/font/soehne-buch.woff2);
+}
+
+@font-face {
+  font-family: Söhne;
+  src: url(/font/soehne-halbfett.woff2);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Söhne Mono;
+  src: url(/font/soehne-mono-buch.woff2);
+}
+
+@font-face {
+  font-family: Söhne Mono;
+  src: url(/font/soehne-mono-halbfett.woff2);
+  font-weight: bold;
+}
+
+
+html, textarea {
+  font-feature-settings: normal;
+  font-variation-settings: normal;
+  font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+}
+
+body {
+  overscroll-behavior: contain;
+  margin:0;
+  background-color: #343541;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+#chat {
+  position: fixed;
+  overflow-y: auto;
+  margin: 10px;
+  height:calc(100% - 87px);
+  width: calc(100% - 10px);
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+#send {
+  position: absolute;
+  right: 20px;
+  border-radius: .5rem;
+  border-width: 1px;
+  border-color: rgba(255,255,255,1);
+  padding: .125rem;
+  background-color:white;
+}
+
+#send svg {
+  display: block;
+}
+
+#send:hover {
+  background-color: white !important;
+}
+
+#messaging {
+  display: flex;
+  align-items: center;
+  padding-top: 0 !important;
+  background-color: #343541;
+  padding: 10px;
+  height: fit-content;
+  width: calc(100% - 20px);
+  position: fixed;
+  bottom: 0;
+}
+
+
+code {
+  font-family: Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace !important;
+}
+
+.textSpace p:last-of-type {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 1.25em;
+  margin-top: 0;
+  line-height: 1.75;
+}
+
+code {
+  color: #fff;
+  font-size: .875em;
+  font-weight: 600;
+}
+
+pre code {
+  color: inherit;
+  font-weight: 400;
+}
+
+pre {
+  background-color: black !important;
+  border-radius: .375rem;
+  line-height: 1.75;
+  padding: 1rem;
+}
+
+#scrollButtonDiv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 20;
+  bottom: calc(2rem + 57px);
+}
+
+#scrollButton {
+  border-color: hsla(0,0%,100%,.1);
+  background-color: hsla(0,0%,100%,.1);
+  color: #c5c5d2;
+  cursor: pointer;
+  border-width: 1px;
+  border-radius: 9999px;
+  background-clip: padding-box;
+  padding: 0;
+}
+
+#scrollButton svg {
+  color: white;
+  margin: .25rem;
+  display:block;
+}
+
+
+element {
+  color-scheme: dark;
+}
+
+.username {
+  pointer-events: none;
+  color: #ececf1;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.textSpace {
+  margin-bottom: 20px;
+  font-size:1rem;
+}
+
+
+
+.user-message {
+  color: #ececf1;
+}
+
+.message {
+  margin-right: 10px;
+}
+
+
+.gpt-message {
+  color: #d1d5db;
+}
+
+#input {
+  max-height: 200px;
+  height: 24px;
+  overflow-y: auto;
+  padding-right: 3rem;
+  padding-left: 1rem;
+  background-color: transparent;
+  padding-bottom: .875rem;
+  padding-top: .875rem;
+  resize: none;
+  border-color: rgba(217,217,227,.2);
+  border-radius: 1rem;
+  border-width: 1px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+
+  width: calc(100% - 20px - 3rem);
+  color: rgba(255,255,255,1);
+}
+
+input:focus, textarea, textarea:focus-visible {
+    outline: none !important;
+}
+
+
+
+
+
+code,
+pre {
+  font-family:Söhne Mono,Monaco,Andale Mono,Ubuntu Mono,monospace!important
+}
+code[class=language-plaintext] {
+  white-space:pre-line
+}
+code.hljs,
+code[class*=language-],
+pre[class*=language-] {
+  word-wrap:normal;
+  background:none;
+  color:#fff;
+  -webkit-hyphens:none;
+  hyphens:none;
+  line-height:1.5;
+  tab-size:4;
+  text-align:left;
+  white-space:pre;
+  word-break:normal;
+  word-spacing:normal
+}
+pre[class*=language-] {
+  border-radius:.3em;
+  overflow:auto
+}
+:not(pre)>code.hljs,
+:not(pre)>code[class*=language-] {
+  border-radius:.3em;
+  padding:.1em;
+  white-space:normal
+}
+.hljs-comment {
+  color:hsla(0,0%,100%,.5)
+}
+.hljs-meta {
+  color:hsla(0,0%,100%,.6)
+}
+.hljs-built_in,
+.hljs-class .hljs-title {
+  color:#e9950c
+}
+.hljs-doctag,
+.hljs-formula,
+.hljs-keyword,
+.hljs-literal {
+  color:#2e95d3
+}
+.hljs-addition,
+.hljs-attribute,
+.hljs-meta-string,
+.hljs-regexp,
+.hljs-string {
+  color:#00a67d
+}
+.hljs-attr,
+.hljs-number,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-pseudo,
+.hljs-template-variable,
+.hljs-type,
+.hljs-variable {
+  color:#df3079
+}
+.hljs-bullet,
+.hljs-link,
+.hljs-selector-id,
+.hljs-symbol,
+.hljs-title {
+  color:#f22c3d
+}

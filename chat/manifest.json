@@ -1,0 +1,38 @@
+{
+
+    "name": "NarwhalGPT",
+    
+    "short_name": "NarwhalGPT",
+    
+    "description": "An AI chatbot.",
+    
+    "icons": [
+          {
+            "src": "/icon16.png",
+            "type": "image/png",
+            "sizes": "16x16",
+            "purpose": "any maskable"
+          },
+          {
+            "src": "/icon48.png",
+            "type": "image/png",
+            "sizes": "48x48",
+            "purpose": "any maskable"
+          },
+          {
+            "src": "/icon128.png",
+            "type": "image/png",
+            "sizes": "128x128",
+            "purpose": "any maskable"
+          }
+        ],
+    
+    "theme_color": "#343541",
+    
+    "background_color": "#75a99c",
+    
+    "display": "standalone",
+    
+    "start_url": "/"
+    
+}
