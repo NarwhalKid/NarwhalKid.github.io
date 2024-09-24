@@ -52,6 +52,8 @@ games = [
   ["1v1.lol", "./game/1v1lol/"], 
   ["doki doki literature ...", "https://backend.narwhalkid.com/ddlc/"], 
   ["gba games", "/emulators/gba"], 
+  ["papas sushiria", "./game/papassushiria/"], 
+  ["tennis physics", "./game/tennisphysics/"], 
   ["drift hunters", "./game/drifthunters/"], 
   ["2048Verse", "https://2048verse.com/"], 
   ["minecraft", "./game/minecraft"], 
