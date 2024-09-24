@@ -1,22 +1,22 @@
 @font-face {
   font-family: Söhne;
-  src: url(/font/soehne-buch.woff2);
+  src: url(./font/soehne-buch.woff2);
 }
 
 @font-face {
   font-family: Söhne;
-  src: url(/font/soehne-halbfett.woff2);
+  src: url(./font/soehne-halbfett.woff2);
   font-weight: bold;
 }
 
 @font-face {
   font-family: Söhne Mono;
-  src: url(/font/soehne-mono-buch.woff2);
+  src: url(./font/soehne-mono-buch.woff2);
 }
 
 @font-face {
   font-family: Söhne Mono;
-  src: url(/font/soehne-mono-halbfett.woff2);
+  src: url(./font/soehne-mono-halbfett.woff2);
   font-weight: bold;
 }
 

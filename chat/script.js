@@ -1,4 +1,4 @@
-const apiURL = "https://backend.narwhalkid.com/";
+const apiURL = "https://backend.narwhalkid.com";
 let chat = document.getElementById("chat");
 let bottom = true;
 let chatLog = {};
