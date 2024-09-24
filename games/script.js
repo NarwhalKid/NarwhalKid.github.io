@@ -51,6 +51,7 @@ games = [
   ["narwhalgpt", "/chat/"], 
   ["1v1.lol", "./game/1v1lol/"], 
   ["doki doki literature ...", "https://backend.narwhalkid.com/ddlc/"], 
+  ["gba games", "/emulators/gba"], 
   ["drift hunters", "./game/drifthunters/"], 
   ["2048Verse", "https://2048verse.com/"], 
   ["minecraft", "./game/minecraft"], 
