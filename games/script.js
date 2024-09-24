@@ -52,6 +52,7 @@ games = [
   ["1v1.lol", "./game/1v1lol/"], 
   ["doki doki literature ...", "https://backend.narwhalkid.com/ddlc/"], 
   ["gba games", "/emulators/gba"], 
+  ["unrestricted youtube", "https://inv.nadeko.net/feed/popular"], 
   ["papas sushiria", "./game/papassushiria/"], 
   ["this is the only level", "./game/thisistheonlylevel/"],  
   ["this is the only level 2", "./game/thisistheonlyleveltoo/"],
