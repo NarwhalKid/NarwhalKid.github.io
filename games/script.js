@@ -53,6 +53,7 @@ games = [
   ["doki doki literature ...", "https://backend.narwhalkid.com/ddlc/"], 
   ["gba games", "/emulators/gba"], 
   ["unrestricted youtube", "https://inv.nadeko.net/feed/popular"], 
+  ["sandtris", "./game/sandtris/"], 
   ["doom", "./game/doom/"], 
   ["tube jumpers", "./game/tubejumpers/"], 
   ["papas sushiria", "./game/papassushiria/"], 
