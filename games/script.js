@@ -60,7 +60,7 @@ games = [
   ["pokemon tower defense", "./game/ptd/"],  
   ["this is the only level", "./game/thisistheonlylevel/"],  
   ["this is the only level 2", "./game/thisistheonlyleveltoo/"],
-  ["this is the only level 3", "./game/thisistheonlylevelthree/"], 
+  // ["this is the only level 3", "./game/thisistheonlylevelthree/"], 
   ["tennis physics", "./game/tennisphysics/"], 
   ["drift hunters", "./game/drifthunters/"], 
   ["2048Verse", "https://2048verse.com/"], 
