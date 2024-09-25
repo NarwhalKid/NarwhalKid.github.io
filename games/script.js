@@ -57,6 +57,7 @@ games = [
   // ["doom", "./game/doom/"],  
   ["tube jumpers", "./game/tubejumpers/"], 
   ["papas sushiria", "./game/papassushiria/"], 
+  ["pokemon tower defense", "./game/ptd/"],  
   ["this is the only level", "./game/thisistheonlylevel/"],  
   ["this is the only level 2", "./game/thisistheonlyleveltoo/"],
   ["this is the only level 3", "./game/thisistheonlylevelthree/"], 
