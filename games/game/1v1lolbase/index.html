@@ -2,10 +2,10 @@
 <html lang="en-us">
   <head>
     <meta charset="utf-8" />
-    <title>1v1.LOL Unblocked Game</title>
+    <title>1v1.lol</title>
     <meta name="description" content="Discover 1v1.LOL, the online building simulator & third person shooting game. Battle royale, build fight, box fight, zone wars, and more game modes to enjoy!" />
     <meta name="keywords" content="1v1 LOL, just build, building simulator, online battle royale, third person shooter, free online games, zone wars, box fight, build fight" />
-    <meta name="google-adsense-account" content="ca-pub-3720612299124178">
+    <!-- <meta name="google-adsense-account" content="ca-pub-3720612299124178"> -->
 
     <script src="js/googleAnalytics.js"></script>
     <script src="lib/jquery.min.js"></script>
@@ -93,45 +93,7 @@
   </head>
 
   <body>
-    <div class="ads">
-      <div class="ad-smallscreen">
-        <div class="ad ad-rectangle-bottom"></div>
-      </div>
-      <div class="ad ad-rectangle-upper" id="adRectangleUpper">
-        <!-- 300X250B PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
-        <script>
-          (function (w, pid) {
-            var r = function (c, m) {
-                c = c.split("").reduce(function (a, b) {
-                  return ((a << 5) - a + b.charCodeAt(0)) >>> m;
-                }, 0);
-                return (10 + ((c * 7) % 26)).toString(36) + c.toString(36);
-              },
-              y = r(w.location.href.split("#")[0], 1),
-              c = r(w.location.href.split("#")[0] + pid, 0);
-            w.document.write('<div style="width:300px;height:250px" class="' + c + '"></div>');
-          })(window, 83023);
-        </script>
-      </div>
-      <div class="ad-largescreen">
-        <div class="ad ad-leaderboard-bottom">
-          <!-- 300X600B PLACEMENT TAG - PLACE INTO BODY (ZONE TAG REQUIRED) -->
-          <script>
-            (function (w, pid) {
-              var r = function (c, m) {
-                  c = c.split("").reduce(function (a, b) {
-                    return ((a << 5) - a + b.charCodeAt(0)) >>> m;
-                  }, 0);
-                  return (10 + ((c * 7) % 26)).toString(36) + c.toString(36);
-                },
-                y = r(w.location.href.split("#")[0], 1),
-                c = r(w.location.href.split("#")[0] + pid, 0);
-              w.document.write('<div style="width:300px;height:600px" class="' + c + '"></div>');
-            })(window, 85420);
-          </script>
-        </div>
-      </div>
-    </div>
+    
 
     <!-- <div id="interAdsContainer" style="display: none;"></div> -->
     <div id="gameContainer"></div>
@@ -146,7 +108,7 @@
     <script id="unity-loader" src="UnityLoader.js"></script>
     <!--<script src="Build/UnityLoader.js"></script>-->
     <script>
-      var gameJsonUrl = "https://justbuild.nyc3.cdn.digitaloceanspaces.com/CI/1v1/Prod/162/WebGL.json"; //%gameJsonUrl
+      var gameJsonUrl = "./WebGL.json"; //%gameJsonUrl
       var hostname = window.location.hostname;
       if (hostname.indexOf("dev1v1") >= 0 || hostname.indexOf("dev.1v1") >= 0 || hostname.indexOf("test1v1") >= 0 || hostname.indexOf("test.1v1") >= 0) {
         let urlParams = new URLSearchParams(window.location.search);
@@ -225,9 +187,9 @@
       var refreshNextTime = true;
 
       function showAds() {
-        document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "block";
-        document.getElementsByClassName("ad-leaderboard-bottom")[0].style.display = "block";
-        document.getElementById("adRectangleUpper").style.display = "block";
+        // document.getElementsByClassName("ad-rectangle-bottom")[0].style.display = "block";
+        // document.getElementsByClassName("ad-leaderboard-bottom")[0].style.display = "block";
+        // document.getElementById("adRectangleUpper").style.display = "block";
 
         if (typeof counter === "undefined") {
           startCounter();
