@@ -54,6 +54,7 @@ games = [
   ["gba games", "/emulators/gba"], 
   ["unrestricted youtube", "https://inv.nadeko.net/feed/popular"], 
   ["funny shooter 2", "./game/funnyshooter2/"], 
+  ["sort the court", "./game/sortthecourt/"], 
   ["geometry dash", "./game/gd/"], 
   ["plants vs zombies", "./game/pvz/"], 
   ["pokemon showdown", "./game/pokemonshowdown/"], 
