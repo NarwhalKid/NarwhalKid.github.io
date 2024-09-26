@@ -53,6 +53,7 @@ games = [
   ["doki doki literature ...", "https://backend.narwhalkid.com/ddlc/"], 
   ["gba games", "/emulators/gba"], 
   ["unrestricted youtube", "https://inv.nadeko.net/feed/popular"], 
+  ["funny shooter 2", "./game/funnyshooter2/"], 
   ["super mario bros", "./game/mario/"], 
   ["sandtris", "./game/sandtris/"], 
   // ["doom", "./game/doom/"],  
