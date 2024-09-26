@@ -393,9 +393,9 @@
 
     <script>
       function showFullscrenAd() {
-        sdk.adv.showFullscreenAdv({
-          callbacks: {},
-        });
+        // sdk.adv.showFullscreenAdv({
+        //   callbacks: {},
+        // });
       }
     </script>
 
@@ -405,17 +405,44 @@
 
     <script>
       function showRewardedAd(id) {
-        sdk.adv.showRewardedVideo({
-          callbacks: {
-            onOpen: () => {
-              window.unityInstance.SendMessage(
-                "SDKPlatforms",
-                "AudioEnable",
-                0
-              );
-            },
-            onRewarded: () => {
-              window.unityInstance.SendMessage(
+        // sdk.adv.showRewardedVideo({
+        //   callbacks: {
+        //     onOpen: () => {
+        //       window.unityInstance.SendMessage(
+        //         "SDKPlatforms",
+        //         "AudioEnable",
+        //         0
+        //       );
+        //     },
+        //     onRewarded: () => {
+        //       window.unityInstance.SendMessage(
+        //         "SDKPlatforms",
+        //         "AudioEnable",
+        //         1
+        //       );
+        //       window.unityInstance.SendMessage(
+        //         "SDKPlatforms",
+        //         "BuyComplete",
+        //         id
+        //       );
+        //     },
+        //     onClose: () => {
+        //       window.unityInstance.SendMessage(
+        //         "SDKPlatforms",
+        //         "AudioEnable",
+        //         1
+        //       );
+        //     },
+        //     onError: (e) => {
+        //       window.unityInstance.SendMessage(
+        //         "SDKPlatforms",
+        //         "AudioEnable",
+        //         1
+        //       );
+        //     },
+        //   },
+        // });
+        window.unityInstance.SendMessage(
                 "SDKPlatforms",
                 "AudioEnable",
                 1
@@ -425,23 +452,6 @@
                 "BuyComplete",
                 id
               );
-            },
-            onClose: () => {
-              window.unityInstance.SendMessage(
-                "SDKPlatforms",
-                "AudioEnable",
-                1
-              );
-            },
-            onError: (e) => {
-              window.unityInstance.SendMessage(
-                "SDKPlatforms",
-                "AudioEnable",
-                1
-              );
-            },
-          },
-        });
       }
     </script>
     <script src="/html/settings/js/index.js"></script>
