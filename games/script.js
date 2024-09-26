@@ -70,6 +70,7 @@ games = [
   ["papas taco mia", "./game/papastacomia/"], 
   ["papas freezeria", "./game/papasfreezeria/"], 
   ["pokemon tower defe...", "./game/ptd/"],  
+  ["plant daddy", "./game/plantdaddy/"],  
   ["this is the only level", "./game/thisistheonlylevel/"],  
   ["this is the only level 2", "./game/thisistheonlyleveltoo/"],
   // ["this is the only level 3", "./game/thisistheonlylevelthree/"], 
