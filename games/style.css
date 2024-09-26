@@ -64,6 +64,12 @@ button:focus {
   line-height: 15vw;
   cursor: pointer;
   text-decoration: none;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.46,.03,.52,.96);
+}
+
+.game:hover {
+  background-color: #dab9ff;
 }
 
 .game h2 {
@@ -74,7 +80,13 @@ button:focus {
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
   text-transform: uppercase;
-  font-weight: bolder
+  font-weight: bolder;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(.46,.03,.52,.96);
+}
+
+.game:hover h2 {
+  color: #1d003c;
 }
 
 #footer {
