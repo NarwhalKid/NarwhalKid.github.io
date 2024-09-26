@@ -62,6 +62,7 @@ games = [
   ["gun mayhem", "./game/gunmayhem/"], 
   ["higher lower", "./game/higherlower/"], 
   ["papas sushiria", "./game/papassushiria/"], 
+  ["papas taco mia", "./game/papastacomia/"], 
   ["pokemon tower defe...", "./game/ptd/"],  
   ["this is the only level", "./game/thisistheonlylevel/"],  
   ["this is the only level 2", "./game/thisistheonlyleveltoo/"],
