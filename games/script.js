@@ -51,6 +51,7 @@ games = [
   ["narwhalgpt", "/chat/"], 
   ["1v1.lol", "./game/1v1lol/"], 
   ["doki doki literature ...", "https://backend.narwhalkid.com/ddlc/"], 
+  ["movies, tv, & anime", "./game/streaming/"], 
   ["minesweeper", "./game/minesweeper/"], 
   ["gba games", "/emulators/gba/"], 
   ["unrestricted youtube", "https://inv.nadeko.net/feed/popular"], 
