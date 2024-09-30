@@ -56,6 +56,7 @@ games = [
   ["funny shooter 2", "./game/funnyshooter2/"], 
   ["sort the court", "./game/sortthecourt/"], 
   ["geometry dash", "./game/gd/"], 
+  ["world's hardest game", "./game/worldshardestgame/"], 
   ["plants vs zombies", "./game/pvz/"], 
   ["pokemon showdown", "./game/pokemonshowdown/"], 
   ["super mario bros", "./game/mario/"], 
