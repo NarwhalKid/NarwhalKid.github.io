@@ -23,7 +23,7 @@
             fetch("https://accounts.spotify.com/api/token?grant_type=client_credentials&client_id=598be00a407646e0908b225694e0b2e6&client_secret=a6e32ac5dc9d43e886a6aad148ff03a4", requestOptions)
             .then((response) => response.text())
             .then((result) => {
-                navigator.clipboard.writeText(JSON.parse(result).access_token);
+                navigator.clipboard.writeText(JSON.parse(result).access_token + "VERFIFIED!");
                 window.close()
             })
             .catch((error) => alert("Error:\n" + error));
