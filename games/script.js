@@ -55,6 +55,7 @@ games = [
   ["minesweeper", "./game/minesweeper/"], 
   ["2048Verse", "https://2048verse.com/"], 
   ["minecraft", "./game/minecraft"], 
+  ["clicker heroes", "./game/clickerheroes/"],
   ["retro bowl", "./game/retrobowl/"],
   ["retro bowl college", "./game/retrobowlcollege/"],
   ["gba games", "/emulators/gba/"], 
