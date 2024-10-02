@@ -74,6 +74,7 @@ games = [
   ["highway racer 2", "./game/highwayracer2/"], 
   ["gun mayhem", "./game/gunmayhem/"], 
   ["higher lower", "./game/higherlower/", true], 
+  ["papas donutria", "./game/donutria/"], 
   ["papas bakeria", "./game/papasbakeria/"], 
   ["papas sushiria", "./game/papassushiria/"], 
   ["papas taco mia", "./game/papastacomia/"], 
