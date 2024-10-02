@@ -49,10 +49,10 @@ function makeNewGameBox(dispName, link, isIfrm) {
 
 games = [
   ["narwhalgpt", "/chat/"], 
-  // ["1v1.lol", "./game/1v1lol/"], 
+  ["1v1.lol", "./game/1v1lol/", true], 
   ["doki doki literature ...", "https://backend.narwhalkid.com/ddlc/"], 
   ["movies, tv, & anime", "./game/streaming/"], 
-  // ["minesweeper", "./game/minesweeper/"], 
+  ["minesweeper", "./game/minesweeper/", true], 
   ["2048Verse", "https://2048verse.com/"], 
   ["minecraft", "./game/minecraft"], 
   ["clicker heroes", "./game/clickerheroes/"],
@@ -65,15 +65,15 @@ games = [
   ["geometry dash", "./game/gd/"], 
   ["world's hardest game", "./game/worldshardestgame/"], 
   ["plants vs zombies", "./game/pvz/"], 
-  ["pokemon showdown", "./game/pokemonshowdown/"], 
+  ["pokemon showdown", "./game/pokemonshowdown/", true], 
   ["super mario bros", "./game/mario/"], 
   ["sandtris", "./game/sandtris/"], 
   // ["doom", "./game/doom/"],  
   ["tube jumpers", "./game/tubejumpers/"], 
-  ["tileman.io", "./game/tilemanio/"], 
+  ["tileman.io", "./game/tilemanio/", true], 
   ["highway racer 2", "./game/highwayracer2/"], 
   ["gun mayhem", "./game/gunmayhem/"], 
-  // ["higher lower", "./game/higherlower/"], 
+  ["higher lower", "./game/higherlower/", true], 
   ["papas bakeria", "./game/papasbakeria/"], 
   ["papas sushiria", "./game/papassushiria/"], 
   ["papas taco mia", "./game/papastacomia/"], 
@@ -121,9 +121,44 @@ games = [
   ["jstris", "./game/jstris/"],
 ]
 
+
+
+
+
+let proxyEnabled = false;
+
+async function checkWebsite(url) {
+  try {
+      const response = await fetch(url);
+
+      if (response.ok) {
+          const data = await response.json();
+
+          if (data.proxyEnabled === true) {
+              proxyEnabled = true;
+          } else {
+              proxyEnabled = false;
+          }
+      } else {
+          proxyEnabled = false;
+      }
+  } catch (error) {
+      proxyEnabled = false;
+  } finally {
+      loadGames();
+  }
+}
+
+checkWebsite(proxyURL + "hvtrs8%2F-wuw%2Cncruhcliif.aoo%2Frrmx{Tgsv.hsmn");
+
+
+
 function loadGames() {
   document.querySelectorAll('.game').forEach((element) => { element.remove() })
   games.forEach((element) => {
+    if(!!element[2] && typeof(proxyEnabled) == "undefined") {
+      return;
+    }
     makeNewGameBox(element[0], element[1])
   })
 }
