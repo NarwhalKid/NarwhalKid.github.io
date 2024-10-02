@@ -163,8 +163,6 @@ function loadGames() {
   })
 }
 
-loadGames()
-
 
 
 function updateGames(query) {
