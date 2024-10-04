@@ -148,7 +148,7 @@ function calcTimeSincePd(day) {
 
 // heres the spot u can test the date in
 date = new Date();
-if (date.getDay() == 5 && document.cookie == "") {
+if (date.getDay() == 5 && !document.cookie.includes('day')) {
   document.getElementById('aOrB').style.display = "inline";
   document.getElementsByClassName('innerMain')[0].style.display = "none"
   document.getElementsByClassName('innerMain')[1].style.display = "none"
