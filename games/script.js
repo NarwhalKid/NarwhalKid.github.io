@@ -126,6 +126,7 @@ games = [
 
 
 
+
 let proxyEnabled = false;
 
 async function checkWebsite(url) {
@@ -133,13 +134,7 @@ async function checkWebsite(url) {
       const response = await fetch(url);
 
       if (response.ok) {
-          const data = await response.json();
-
-          if (data.proxyEnabled === true) {
-              proxyEnabled = true;
-          } else {
-              proxyEnabled = false;
-          }
+          proxyEnabled = true;
       } else {
           proxyEnabled = false;
       }
@@ -150,14 +145,18 @@ async function checkWebsite(url) {
   }
 }
 
-checkWebsite(proxyURL + "hvtrs8%2F-wuw%2Cncruhcliif.aoo%2Frrmx{Tgsv.hsmn");
+if (typeof(proxyBase) != "undefined") {
+  checkWebsite(proxyBase);
+} else {
+  loadGames();
+}
 
 
 
 function loadGames() {
   document.querySelectorAll('.game').forEach((element) => { element.remove() })
   games.forEach((element) => {
-    if(!!element[2] && typeof(proxyEnabled) == "undefined") {
+    if(!!element[2] && !proxyEnabled) {
       return;
     }
     makeNewGameBox(element[0], element[1])
