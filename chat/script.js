@@ -70,6 +70,9 @@ function scrollOnResize() {
 window.onresize = scrollOnResize;
 
 function showLoggedChat() {
+  if (chatLog[currentChat] === undefined) {
+    currentChat = "default"
+  }
   chatLog[currentChat].forEach((element) => {
     if (element.role == "user") {
       displayMessage("You", element.parts[0].text);
@@ -223,12 +226,16 @@ function sendMessage() {
   if (command == "$rmdir") { // Delete chat
 
     if(chatLog[params[0]]) {
-    delete chatLog[params[0]];
-    setLogs()
-    if(currentChat == params[0]) {
-      location.reload();
-      return;
-    }
+      if (params[0] == "default") {
+        chatLog["default"] = [];
+      } else {
+        delete chatLog[params[0]];
+      }
+      setLogs()
+      if(currentChat == params[0]) {
+        location.reload();
+        return;
+      }
       displayMessage("You", textPrompt);
       displayMessage("System", `${params[0]} deleted`);
     } else {
