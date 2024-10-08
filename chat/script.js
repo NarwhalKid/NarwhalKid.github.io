@@ -247,13 +247,18 @@ function sendMessage() {
   } else if (command == "$mkdir") { // Make new chat
 
     if (params.length > 0) {
-    chatLog[params[0]] = [];
-    displayMessage("You", textPrompt);
-    displayMessage("System", `${params[0]} created`);
-    setLogs()
+      if (chatLog[params[0]]) {
+        displayMessage("You", textPrompt);
+        displayMessage("System", "Directory already exists");
+      } else {
+        chatLog[params[0]] = [];
+        displayMessage("You", textPrompt);
+        displayMessage("System", `${params[0]} created`);
+        setLogs()
+      }
   } else {
     displayMessage("You", textPrompt);
-    displayMessage("System", "Chat not found");
+    displayMessage("System", "Parameter missing");
   }
     return;
 
