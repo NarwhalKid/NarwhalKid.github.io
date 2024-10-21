@@ -64,6 +64,14 @@ function displayTime(seconds) {
   }
   document.title = hrs + ":" + mins + ":" + secs;
   text.innerHTML = hrs + ":" + mins + ":" + secs;
+  var link = document.querySelector("link[rel~='icon']");
+  if (!link) {
+      link = document.createElement('link');
+      link.rel = 'icon';
+      document.head.appendChild(link);
+  }
+  if (hrs>0) mins=60;
+  link.href = `./favicons/${mins}.png`;
 }
 
 
