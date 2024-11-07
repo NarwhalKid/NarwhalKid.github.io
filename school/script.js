@@ -1,3 +1,35 @@
+const periodsA = [
+  [0, 00, "No School"],
+  [7, 25, "Homeroom"],
+  [7, 40, "Switching Classes"],
+  [7, 45, "AP Computer Science A"],
+  [9, 10, "Switching Classes"],
+  [9, 15, "Advanced Technological Applications"],
+  [10, 40, "Switching Classes"],
+  [10, 45, "Drawing & Painting"],
+  [10, 45, "Lunch"],
+  [11, 05, "Drawing & Painting"],
+  [12, 30, "Switching Classes"],
+  [12, 35, "PE"],
+  [14, 00, "No School"]
+];
+const periodsB = [
+  [0, 00, "No School"],
+  [7, 25, "Homeroom"],
+  [7, 40, "Switching Classes"],
+  [7, 45, "English III"],
+  [9, 10, "Switching Classes"],
+  [9, 15, "AP Computer Science Principles"],
+  [10, 40, "Switching Classes"],
+  [10, 45, "Earth and Environmental Systems"],
+  [12, 05, "Lunch"],
+  [12, 30, "Earth and Environmental Systems"],
+  [12, 30, "Switching Classes"],
+  [12, 35, "US History"],
+  [14, 00, "No School"]
+];
+
+
 const text = document.getElementById('text');
 const r = document.querySelector(':root');
 let menu = 0;
@@ -70,37 +102,6 @@ function displayTime(seconds) {
 function calcTimeSincePd(day) {
   const date = new Date();
   const date2 = new Date();
-
-  const periodsA = [
-    [0, 00, "No School"],
-    [7, 25, "Homeroom"],
-    [7, 40, "Switching Classes"],
-    [7, 45, "AP Computer Science A"],
-    [9, 10, "Switching Classes"],
-    [9, 15, "Advanced Technological Applications"],
-    [10, 40, "Switching Classes"],
-    [10, 45, "Drawing & Painting"],
-    [10, 45, "Lunch"],
-    [11, 05, "Drawing & Painting"],
-    [12, 30, "Switching Classes"],
-    [12, 35, "PE"],
-    [14, 00, "No School"]
-  ];
-  const periodsB = [
-    [0, 00, "No School"],
-    [7, 25, "Homeroom"],
-    [7, 40, "Switching Classes"],
-    [7, 45, "English III"],
-    [9, 10, "Switching Classes"],
-    [9, 15, "AP Computer Science Principles"],
-    [10, 40, "Switching Classes"],
-    [10, 45, "Earth and Environmental Systems"],
-    [12, 05, "Lunch"],
-    [12, 30, "Earth and Environmental Systems"],
-    [12, 30, "Switching Classes"],
-    [12, 35, "US History"],
-    [14, 00, "No School"]
-  ];
 
   const periods = document.cookie[4] === "A" ? periodsA : periodsB;
   
