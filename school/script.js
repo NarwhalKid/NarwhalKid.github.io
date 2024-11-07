@@ -9,34 +9,38 @@ function countdown(seconds) {
 
   var i = 0
   function myLoop(loopDay) {
-    dayy = document.getElementById('day').innerText[0]
-    displayTime(seconds - i);
-    i++;
-    if (i < seconds) {
+    let i = 0;
+    let intervalId = setInterval(() => {
+      let dayy = document.getElementById('day').innerText[0];
+      displayTime(seconds - i);
+      i++;
+  
+      // Check if we should stop the interval
+      if (i >= seconds) {
+        clearInterval(intervalId);
+        calcTimeSincePd();
+      }
+  
       if (menu == 0) {
-
-
-        var something = (new Date).getSeconds();
-        var something_cachedValue = something;
-
+        let something = (new Date()).getSeconds();
+        let something_cachedValue = something;
+  
         function doStuff() {
-          if ((new Date).getSeconds() === something_cachedValue) {
-            setTimeout(doStuff, 50);
-            return;
-          }
-          something_cachedValue = something;
-          console.log(loopDay + " " + dayy)
-          if (menu == 0 && dayy == loopDay) {
-            calcTimeSincePd();
+          if ((new Date()).getSeconds() !== something_cachedValue) {
+            something_cachedValue = something;
+            console.log(loopDay + " " + dayy);
+  
+            if (menu == 0 && dayy == loopDay) {
+              calcTimeSincePd();
+            }
           }
         }
-
+  
         doStuff();
       }
-    } else {
-      calcTimeSincePd();
-    }
+    }, 1000); // Run every second
   }
+  
 
   myLoop(document.getElementById('day').innerText[0]);
 }
