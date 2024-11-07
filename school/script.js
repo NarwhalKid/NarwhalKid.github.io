@@ -7,15 +7,16 @@ menuAnim = 0
 function countdown(seconds) {
   displayTime(seconds);
 
-  // Sync the timer to the next second
+  // Sync the timer to the next second by calculating the time until the next second boundary
   const now = new Date();
-  const delay = 1000 - (now % 1000); // Get the milliseconds until the next second
+  const delay = 1000 - now.getMilliseconds(); // Get milliseconds until the next second
 
+  // Start the countdown immediately, and then sync updates to the next second
   setTimeout(() => {
     const startTime = performance.now(); // Start the timer after syncing to the next second
 
     function updateTime() {
-      const elapsed = Math.floor((performance.now() - startTime) / 1000); // Calculate the elapsed time in seconds
+      const elapsed = Math.floor((performance.now() - startTime) / 1000); // Calculate elapsed time in seconds
       const remaining = seconds - elapsed;
 
       displayTime(remaining);
@@ -26,17 +27,15 @@ function countdown(seconds) {
         return;
       }
 
-      // Continue updating every frame
-      if (menu === 0) {
-        requestAnimationFrame(updateTime);
-      }
+      // Continue updating every frame, synced to the next second
+      requestAnimationFrame(updateTime);
     }
 
-    // Start the countdown after the delay
-    requestAnimationFrame(updateTime);
-
-  }, delay); // Delay until the next second boundary
+    // Start the countdown immediately, then sync subsequent updates
+    updateTime(); // Start immediately after the first "sync" delay
+  }, delay); // Delay until the next second boundary (ensuring sync)
 }
+
 
 
 function getPercent(length, total) {
