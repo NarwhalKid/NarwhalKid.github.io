@@ -40,15 +40,6 @@ function countdown(seconds) {
 
 
 
-
-
-
-
-
-
-
-
-
 function getPercent(length, total) {
   document.getElementById("bar").style.transitionDuration = "0s";
   percent = (total * 100) / length
@@ -62,13 +53,15 @@ function getPercent(length, total) {
 
 function displayTime(seconds) {
   const hrs = Math.floor(seconds / 3600);
-  const mins = Math.floor(seconds / 60) % 60;
+  let mins = Math.floor(seconds / 60) % 60;
   const secs = seconds % 60;
   const formattedSecs = secs < 10 ? "0" + secs : secs;
   const formattedMins = mins < 10 ? "0" + mins : mins;
 
   document.title = `${hrs}:${formattedMins}:${formattedSecs}`;
   text.innerHTML = `${hrs}:${formattedMins}:${formattedSecs}`;
+
+  if (hrs > 0) mins = 60
 
   let link = document.querySelector("link[rel~='icon']");
   if (!link) {
