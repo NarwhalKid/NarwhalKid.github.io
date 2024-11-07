@@ -5,36 +5,47 @@ menuAnim = 0
 
 
 function countdown(seconds) {
+  // Immediately display the time
   displayTime(seconds);
 
-  // Sync the timer to the next second by calculating the time until the next second boundary
-  const now = new Date();
-  const delay = 1000 - now.getMilliseconds(); // Get milliseconds until the next second
+  // Calculate the target end time in ms
+  let targetTime = Date.now() + seconds * 1000;
 
-  // Start the countdown immediately, and then sync updates to the next second
-  setTimeout(() => {
-    const startTime = performance.now(); // Start the timer after syncing to the next second
+  // Function to update the countdown every second
+  function updateTime() {
+    const now = Date.now();
+    const remaining = Math.max(0, Math.floor((targetTime - now) / 1000));
 
-    function updateTime() {
-      const elapsed = Math.floor((performance.now() - startTime) / 1000); // Calculate elapsed time in seconds
-      const remaining = seconds - elapsed;
+    // Display the remaining time
+    displayTime(remaining);
 
-      displayTime(remaining);
-
-      // If the countdown has finished
-      if (remaining <= 0) {
-        calcTimeSincePd();
-        return;
-      }
-
-      // Continue updating every frame, synced to the next second
-      requestAnimationFrame(updateTime);
+    // If time is up, stop the countdown
+    if (remaining <= 0) {
+      clearTimeout(updateTimer);  // Stop the update timer
+      calcTimeSincePd();  // Final calculation when countdown finishes
     }
+  }
 
-    // Start the countdown immediately, then sync subsequent updates
-    updateTime(); // Start immediately after the first "sync" delay
-  }, delay); // Delay until the next second boundary (ensuring sync)
+  // Sync the first update to the next second boundary
+  const delay = (1000 - (Date.now() % 1000)) % 1000;
+
+  // Start the first update precisely at the next second boundary
+  setTimeout(function() {
+    updateTime();  // Run the first update immediately after the delay
+    
+    // Now, set up the subsequent updates every second
+    const updateTimer = setInterval(updateTime, 1000);  // Update every second
+  }, delay);  // Initial delay to align to the next second
 }
+
+
+
+
+
+
+
+
+
 
 
 
