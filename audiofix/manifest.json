@@ -7,7 +7,7 @@
       "id": "455429792871874581"
     }
   ],
-  "main": "index.js",
+  "main": "index.ts",
   "vendetta": {
     "icon": "speaker",
     "original": "redstonekasi.github.io/vendetta-plugins/audiofix/"
