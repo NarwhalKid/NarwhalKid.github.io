@@ -1,12 +1,19 @@
-export default {
-    onLoad: () => {
-        if (vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn) {
-            vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOnBackup = vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn
-            delete vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn
+(function (context, metro) {
+    "use strict";
+
+    const patch = () => {
+        if (metro.findByProps("setCommunicationModeOn").setCommunicationModeOn) {
+            metro.findByProps("setCommunicationModeOn").setCommunicationModeOnBackup = metro.findByProps("setCommunicationModeOn").setCommunicationModeOn
+            delete metro.findByProps("setCommunicationModeOn").setCommunicationModeOn
         }
-    },
-    onUnload: () => {
-        vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn = vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOnBackup
-    },
-    settings: Settings,
-}
+    }
+
+    const unpatch = () => {
+        metro.findByProps("setCommunicationModeOn").setCommunicationModeOn = metro.findByProps("setCommunicationModeOn").setCommunicationModeOnBackup
+    }
+    
+
+    context.onUnload = unpatch;
+    context.onLoad = patch;
+
+})({}, vendetta.metro);
