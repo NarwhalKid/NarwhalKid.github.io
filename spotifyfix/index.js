@@ -1,28 +1,22 @@
-const { before } = vendetta.patcher;
-const { findByProps } = vendetta.metro;
+(function (context, patcher, metro) {
+    "use strict";
+    
+    const { before } = patcher;
+    const { findByProps } = metro;
+    const SpotifyStore = findByProps("dispatch", "getProfile");
+    
 
-export default {
-    onLoad: function () {
-        this.unpatches = []; // Initialize an array to store unpatch functions
+    const unpatch = () => {
+        before("dispatch", SpotifyStore, ([action]) => {
+            if (
+                action.type === "SPOTIFY_PROFILE_UPDATE" &&
+                action.payload?.isPremium === undefined
+            ) {
+                action.payload.isPremium = true; // Force premium
+            }
+        })
+    }
 
-        const SpotifyStore = findByProps("dispatch", "getProfile");
+    context.onUnload = unpatch;
 
-            this.unpatches.push(
-                before("dispatch", SpotifyStore, ([action]) => {
-                    if (
-                        action.type === "SPOTIFY_PROFILE_UPDATE" &&
-                        action.payload?.isPremium === undefined
-                    ) {
-                        action.payload.isPremium = true; // Force premium
-                    }
-                })
-            );
-    },
-    onUnload: function () {
-        // Unload all patches
-        if (this.unpatches) {
-            this.unpatches.forEach((unpatch) => unpatch());
-            this.unpatches = null;
-        }
-    },
-};
+}),({}, vendetta.patcher, vendetta.metro);
