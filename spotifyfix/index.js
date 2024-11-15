@@ -3,7 +3,7 @@
     
     const { before } = patcher;
     const { findByProps } = metro;
-    const SpotifyStore = findByProps("dispatch", "getProfile");
+    const SpotifyStore = findByProps("dispatch");
     
 
     const unpatch = () => {
