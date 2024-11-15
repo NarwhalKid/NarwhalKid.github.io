@@ -1,5 +1,6 @@
 const { storage } = vendetta.plugin;
-const { before, findByProps } = vendetta.patcher;
+const { before } = vendetta.patcher;
+const { findByProps } = vendetta.metro;
 
 // Default settings
 const defaultSettings = {
