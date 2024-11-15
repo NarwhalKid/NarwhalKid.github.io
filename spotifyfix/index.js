@@ -2,13 +2,14 @@ import { storage } from "@vendetta/plugin";
 import { before, findByProps } from "@vendetta/patcher";
 import { plugins } from "@vendetta";
 
+// Default settings
 const defaultSettings = {
     noSpotifyAutoPause: true,
     keepSpotifyActivityOnIdle: false,
 };
 
 // Initialize settings with defaults
-storage.settings ??= defaultSettings;
+storage.settings = storage.settings || defaultSettings;
 
 export const onLoad = () => {
     const SpotifyStore = findByProps("dispatch", "getProfile");
@@ -40,9 +41,4 @@ export const onLoad = () => {
 export const onUnload = () => {
     // Unload all patches
     plugins.clearPatches();
-};
-
-export const settings = {
-    default: defaultSettings,
-    current: storage.settings,
 };
