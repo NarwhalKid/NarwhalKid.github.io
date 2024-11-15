@@ -19,4 +19,4 @@
 
     context.onUnload = unpatch;
 
-}),({}, vendetta.patcher, vendetta.metro);
+})({}, vendetta.patcher, vendetta.metro);
