@@ -7,7 +7,7 @@
       "id": "455429792871874581"
     }
   ],
-  "main": "./src/index.ts",
+  "main": "index.ts",
   "vendetta": {
     "icon": "speaker"
   }
