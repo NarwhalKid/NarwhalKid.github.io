@@ -7,8 +7,10 @@
       "id": "265064055490871297"
     }
   ],
-  "main": "./src/index.ts",
+  "main": "index.js",
   "vendetta": {
-    "icon": "speaker"
-  }
+    "icon": "speaker",
+    "original": "redstonekasi.github.io/vendetta-plugins/audiofix/"
+  },
+  "hash": "f7abb32022ed55a80fe14b79fbb826e325eed9079c7dd70159f343f617f3086a"
 }
