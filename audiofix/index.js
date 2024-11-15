@@ -1,3 +1,4 @@
+export const MMKVManager = nmp.MMKVManager;
 const { ReactNative: RN } = vendetta.metro.common;
 const { instead } = vendetta.patcher;
 
