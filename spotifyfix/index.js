@@ -16,8 +16,6 @@ export default {
 
         const SpotifyStore = findByProps("dispatch", "getProfile");
 
-        // Patch Spotify auto-pause
-        if (storage.settings.noSpotifyAutoPause) {
             this.unpatches.push(
                 before("dispatch", SpotifyStore, ([action]) => {
                     if (
@@ -28,20 +26,6 @@ export default {
                     }
                 })
             );
-        }
-
-        // Patch Spotify activity while idle
-        if (storage.settings.keepSpotifyActivityOnIdle) {
-            const shouldShowActivity = findByProps("shouldShowActivity");
-            this.unpatches.push(
-                before("shouldShowActivity", shouldShowActivity, (args) => {
-                    const [original] = args;
-                    if (original?.isIdle) {
-                        original.isIdle = false; // Override idle status
-                    }
-                })
-            );
-        }
     },
     onUnload: function () {
         // Unload all patches

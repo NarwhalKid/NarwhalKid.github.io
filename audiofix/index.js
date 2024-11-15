@@ -1,30 +1,51 @@
-export const MMKVManager = nmp.MMKVManager;
-const { ReactNative: RN } = vendetta.metro.common;
-const { instead } = vendetta.patcher;
+(function (context, common, patcher) {
+    "use strict";
 
-export default {
-    onLoad: () => {
-        try {
-            const audioManager = RN.NativeModules.AudioManager || RN.NativeModules.RTNAudioManager;
+    // Accessing the correct AudioManager module from NativeModules
+    const audioManager = common.ReactNative.NativeModules.AudioManager === null
+        ? common.ReactNative.NativeModules.RTNAudioManager
+        : common.ReactNative.NativeModules.AudioManager;
 
-            if (!audioManager) {
-                console.error("AudioManager or RTNAudioManager not found.");
-                return;
-            }
+    // Apply the "instead" patch to the "setCommunicationModeOn" function
+    const unpatch = patcher.instead("setCommunicationModeOn", audioManager, () => {
+        // Empty function for the patch
+    });
 
-            console.log("AudioManager found:", audioManager);
+    // Attach the unpatch function to be called during onUnload
+    context.onUnload = unpatch;
 
-            this.unpatch = instead("setCommunicationModeOn", audioManager, () => {
-                console.log("Patched setCommunicationModeOn");
-            });
-        } catch (error) {
-            console.error("Error in onLoad:", error);
-        }
-    },
-    onUnload: () => {
-        if (this.unpatch) {
-            this.unpatch();
-            this.unpatch = null;
-        }
-    }
-};
+    return context;
+})({}, vendetta.metro.common, vendetta.patcher);
+
+
+
+// export const MMKVManager = nmp.MMKVManager;
+// const { ReactNative: RN } = vendetta.metro.common;
+// const { instead } = vendetta.patcher;
+
+// export default {
+//     onLoad: () => {
+//         try {
+//             const audioManager = RN.NativeModules.AudioManager || RN.NativeModules.RTNAudioManager;
+
+//             if (!audioManager) {
+//                 console.error("AudioManager or RTNAudioManager not found.");
+//                 return;
+//             }
+
+//             console.log("AudioManager found:", audioManager);
+
+//             this.unpatch = instead("setCommunicationModeOn", audioManager, () => {
+//                 console.log("Patched setCommunicationModeOn");
+//             });
+//         } catch (error) {
+//             console.error("Error in onLoad:", error);
+//         }
+//     },
+//     onUnload: () => {
+//         if (this.unpatch) {
+//             this.unpatch();
+//             this.unpatch = null;
+//         }
+//     }
+// };
