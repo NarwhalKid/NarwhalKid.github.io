@@ -1,15 +1,5 @@
-const { storage } = vendetta.plugin;
 const { before } = vendetta.patcher;
 const { findByProps } = vendetta.metro;
-
-// Default settings
-const defaultSettings = {
-    noSpotifyAutoPause: true,
-    keepSpotifyActivityOnIdle: false,
-};
-
-// Initialize settings with defaults
-storage.settings = storage.settings || defaultSettings;
 
 export default {
     onLoad: function () {
