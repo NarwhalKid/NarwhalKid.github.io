@@ -1,35 +1,17 @@
+const { metro } = vendetta.metro
+
 export default {
-    
-    onLoad() {
-      // Hook into the WebRTC API or any relevant audio-related function
-      const audioModule = vendetta.metro.findByProps("setCommunicationModeOn");
-  
-      if (audioModule && audioModule.setAudioType) {
-        const originalSetAudioType = audioModule.setAudioType;
-  
-        audioModule.setAudioType = function (type, ...args) {
-          // Prevent setting 'in_call' audio type
-          if (type === "in_call") {
-            console.log("Blocked 'in_call' audio type.");
-            return;
-          }
-          return originalSetAudioType.apply(this, [type, ...args]);
-        };
-  
-        console.log("Patched setAudioType!");
-      } else {
-        console.warn("Audio module not found. Plugin might not work as expected.");
-      }
+    onLoad: () => {
+        if (vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn) {
+            vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOnBackup = vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn
+            delete vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn
+        }
     },
-  
-    onUnload() {
-      // Restore original behavior
-      const audioModule = vendetta.metro.findByProps("setCommunicationModeOn");
-      if (audioModule && audioModule.setAudioType) {
-        delete audioModule.setAudioType;
-      }
-    }
-  };
+    onUnload: () => {
+        vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOn = vendetta.metro.findByProps("setCommunicationModeOn").setCommunicationModeOnBackup
+    },
+    settings: Settings,
+}
 
 
 // (function (context, common, patcher) {
