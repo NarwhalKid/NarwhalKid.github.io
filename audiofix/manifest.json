@@ -1,5 +1,5 @@
 {
-  "name": "Blueooth Audio Fix",
+  "name": "Bluetooth Audio Fix",
   "description": "Prevents discord from enabling handsfree mode while in a call",
   "authors": [
     {
