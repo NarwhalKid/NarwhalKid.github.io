@@ -1,1 +1,17 @@
-(function(a,e,t){"use strict";const n=t.instead("setCommunicationModeOn",e.ReactNative.NativeModules.AudioManager===null?e.ReactNative.NativeModules.RTNAudioManager:e.ReactNative.NativeModules.AudioManager,()=>{});return a.onUnload=n,a})({},vendetta.metro.common,vendetta.patcher);
+const { ReactNative: RN } = vendetta.metro.common;
+const { instead } = vendetta.patcher;
+
+export default {
+    onLoad: () => {
+        const audioManager = RN.NativeModules.AudioManager || RN.NativeModules.RTNAudioManager;
+        if (audioManager) {
+            this.unpatch = instead("setCommunicationModeOn", audioManager, () => {});
+        }
+    },
+    onUnload: () => {
+        if (this.unpatch) {
+            this.unpatch();
+            this.unpatch = null;
+        }
+    }
+};
