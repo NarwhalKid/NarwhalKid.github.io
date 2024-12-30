@@ -40,8 +40,8 @@ document.getElementById("search").onclick = ()=>{
                 pair2ImgHTML = `<img src="${pair[1].screenshots.front}"><br><img src="${pair[1].screenshots.back}">`
             }
 
-            if (pair1ImgHTML == `<img src="undefined">`) pair1ImgHTML = "";
-            if (pair2ImgHTML == `<img src="undefined">`) pair2ImgHTML = "";
+            if (pair1ImgHTML == `<img src="undefined"><br><img src="undefined">`) pair1ImgHTML = "";
+            if (pair2ImgHTML == `<img src="undefined"><br><img src="undefined">`) pair2ImgHTML = "";
 
             html += `
             <hr>
