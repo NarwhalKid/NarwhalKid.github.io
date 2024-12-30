@@ -26,22 +26,21 @@ document.getElementById("search").onclick = ()=>{
             let pair2ImgHTML = "";
             let pair1Type = "CSFloat";
             let pair2Type = "CSFloat";
-            if (pair[0].screenshots.buff) {
-                pair1ImgHTML = `<img src="${pair[0].screenshots.buff}">`
+            if (!pair[0].screenshots.front) {
+                const url = pair[0].screenshots.buff ? pair[0].screenshots.buff : "https://backend.narwhalkid.com/no/preview";
+                pair1ImgHTML = `<img src="${url}">`
                 pair1Type = "Buff";
             } else {
                 pair1ImgHTML = `<img src="${pair[0].screenshots.front}"><br><img src="${pair[0].screenshots.back}">`
             }
 
-            if (pair[1].screenshots.buff) {
-                pair2ImgHTML = `<img src="${pair[1].screenshots.buff}">`
+            if (!pair[1].screenshots.front) {
+                const url = pair[1].screenshots.buff ? pair[1].screenshots.buff : "https://backend.narwhalkid.com/no/preview";
+                pair1ImgHTML = `<img src="${url}">`;
                 pair2Type = "Buff";
             } else {
                 pair2ImgHTML = `<img src="${pair[1].screenshots.front}"><br><img src="${pair[1].screenshots.back}">`
             }
-
-            if (pair1ImgHTML == `<img src="undefined"><br><img src="undefined">`) pair1ImgHTML = "";
-            if (pair2ImgHTML == `<img src="undefined"><br><img src="undefined">`) pair2ImgHTML = "";
 
             html += `
             <hr>
