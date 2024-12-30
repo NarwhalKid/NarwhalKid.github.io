@@ -24,15 +24,24 @@ document.getElementById("search").onclick = ()=>{
         data.pairs.forEach((pair)=>{
             pair1ImgHTML = "";
             pair2ImgHTML = "";
-            if (pair[0].screenshots.buff)
+            pair1Type = "CSFloat";
+            pair2Type = "CSFloat";
+            if (pair[0].screenshots.buff) {
                 pair1ImgHTML = `<img src="${pair[0].screenshots.buff}">`
-            else 
+                pair1Type = "Buff";
+            } else {
                 pair1ImgHTML = `<img src="${pair[0].screenshots.front}"><br><img src="${pair[0].screenshots.back}">`
+            }
 
-            if (pair[1].screenshots.buff)
+            if (pair[1].screenshots.buff) {
                 pair2ImgHTML = `<img src="${pair[1].screenshots.buff}">`
-            else 
+                pair2Type = "Buff";
+            } else {
                 pair2ImgHTML = `<img src="${pair[1].screenshots.front}"><br><img src="${pair[1].screenshots.back}">`
+            }
+
+            if (pair1ImgHTML = `<img src="undefined">`) pair1ImgHTML = "";
+            if (pair2ImgHTML = `<img src="undefined">`) pair2ImgHTML = "";
 
             html += `
             <hr>
@@ -43,7 +52,7 @@ document.getElementById("search").onclick = ()=>{
                     <h2>Pattern: ${pair[0].pattern}</h2>
                     <h2>Float: ${pair[0].float}</h2>
                     ${pair1ImgHTML}
-                    <a href="${pair[0].url}" target="_blank"><h2>Click here to open in CSFloat</h2></a>
+                    <a href="${pair[0].url}" target="_blank"><h2>Click here to open in ${pair1Type}</h2></a>
                     <a href="${pair[0].inspect}"><h2>Click here to open in game</h2></a>
                 </div>
                 <div class="item2">
@@ -51,7 +60,7 @@ document.getElementById("search").onclick = ()=>{
                     <h2>Pattern: ${pair[1].pattern}</h2>
                     <h2>Float: ${pair[1].float}</h2>
                     ${pair2ImgHTML}
-                    <a href="${pair[1].url}" target="_blank"><h2>Click here to open in CSFloat</h2></a>
+                    <a href="${pair[1].url}" target="_blank"><h2>Click here to open in ${pair2Type}</h2></a>
                     <a href="${pair[1].inspect}"><h2>Click here to open in game</h2></a>
                 </div>
             </div>`
