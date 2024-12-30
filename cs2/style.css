@@ -16,6 +16,9 @@ a, h1 {
 #nob {
     display: flex;
     justify-content: center;
+}
+
+#nob img {
     height: 300px;
     width: 80%;
 }
