@@ -22,10 +22,10 @@ document.getElementById("search").onclick = ()=>{
             return;
         }
         data.pairs.forEach((pair)=>{
-            pair1ImgHTML = "";
-            pair2ImgHTML = "";
-            pair1Type = "CSFloat";
-            pair2Type = "CSFloat";
+            let pair1ImgHTML = "";
+            let pair2ImgHTML = "";
+            let pair1Type = "CSFloat";
+            let pair2Type = "CSFloat";
             if (pair[0].screenshots.buff) {
                 pair1ImgHTML = `<img src="${pair[0].screenshots.buff}">`
                 pair1Type = "Buff";
