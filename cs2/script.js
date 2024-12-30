@@ -5,6 +5,8 @@ document.getElementById("search").onclick = ()=>{
     const quality = document.getElementById("quality").value;
     const type = document.getElementById("type").value;
     const sort = document.getElementById("float").checked ? "float" : "price";
+    const resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = "<h1>Loading...</h1>"
 
     const url = `https://backend.narwhalkid.com/cs2/item?item=${item}&pattern=${pattern}&sort=${sort}&quality=${quality}&type=${type}`
     fetch(url)
@@ -12,7 +14,6 @@ document.getElementById("search").onclick = ()=>{
       return response.json();
     })
     .then((data) => {
-        const resultsDiv = document.getElementById("results");
         let html = "";
         if (data.pairs.length < 1) {
             let resultsError = data.item;
