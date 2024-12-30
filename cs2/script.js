@@ -22,6 +22,18 @@ document.getElementById("search").onclick = ()=>{
             return;
         }
         data.pairs.forEach((pair)=>{
+            pair1ImgHTML = "";
+            pair2ImgHTML = "";
+            if (pair[0].screenshots.buff)
+                pair1ImgHTML = `<img src="${pair[0].screenshots.buff}">`
+            else 
+                pair1ImgHTML = `<img src="${pair[0].screenshots.front}"><br><img src="${pair[0].screenshots.back}">`
+
+            if (pair[1].screenshots.buff)
+                pair0ImgHTML = `<img src="${pair[1].screenshots.buff}">`
+            else 
+                pair0ImgHTML = `<img src="${pair[1].screenshots.front}"><br><img src="${pair[1].screenshots.back}">`
+
             html += `
             <hr>
             <h1>Total Price: $${(pair[0].price + pair[1].price).toFixed(2)}</h1>
@@ -30,9 +42,7 @@ document.getElementById("search").onclick = ()=>{
                     <h2>Price: $${pair[0].price.toFixed(2)}</h2>
                     <h2>Pattern: ${pair[0].pattern}</h2>
                     <h2>Float: ${pair[0].float}</h2>
-                    <img src="${pair[0].screenshots.front}">
-                    <br>
-                    <img src="${pair[0].screenshots.back}">
+                    ${pair1ImgHTML}
                     <a href="${pair[0].url}" target="_blank"><h2>Click here to open in CSFloat</h2></a>
                     <a href="${pair[0].inspect}"><h2>Click here to open in game</h2></a>
                 </div>
@@ -40,9 +50,7 @@ document.getElementById("search").onclick = ()=>{
                     <h2>Price: $${pair[1].price.toFixed(2)}</h2>
                     <h2>Pattern: ${pair[1].pattern}</h2>
                     <h2>Float: ${pair[1].float}</h2>
-                    <img src="${pair[1].screenshots.front}">
-                    <br>
-                    <img src="${pair[1].screenshots.back}">
+                    ${pair2ImgHTML}
                     <a href="${pair[1].url}" target="_blank"><h2>Click here to open in CSFloat</h2></a>
                     <a href="${pair[1].inspect}"><h2>Click here to open in game</h2></a>
                 </div>
