@@ -18,7 +18,7 @@ document.getElementById("search").onclick = ()=>{
         if (data.pairs.length < 1) {
             let resultsError = data.item;
             if (data.resetTime) resultsError += (new Date(data.resetTime)).toLocaleTimeString();
-            resultsDiv.innerHTML = `<h1>${resultsError}</h1>`;
+            resultsDiv.innerHTML = `<h1>${resultsError}</h1><div id="nob"><img src="https://backend.narwhalkid.com/no/results"></div>`;
             return;
         }
         data.pairs.forEach((pair)=>{
