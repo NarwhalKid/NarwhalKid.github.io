@@ -30,9 +30,9 @@ document.getElementById("search").onclick = ()=>{
                 pair1ImgHTML = `<img src="${pair[0].screenshots.front}"><br><img src="${pair[0].screenshots.back}">`
 
             if (pair[1].screenshots.buff)
-                pair0ImgHTML = `<img src="${pair[1].screenshots.buff}">`
+                pair2ImgHTML = `<img src="${pair[1].screenshots.buff}">`
             else 
-                pair0ImgHTML = `<img src="${pair[1].screenshots.front}"><br><img src="${pair[1].screenshots.back}">`
+                pair2ImgHTML = `<img src="${pair[1].screenshots.front}"><br><img src="${pair[1].screenshots.back}">`
 
             html += `
             <hr>
