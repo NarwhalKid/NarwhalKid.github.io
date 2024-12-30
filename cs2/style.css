@@ -1,0 +1,68 @@
+:root {
+    --background: #1d003c;
+    --main: #dab9ff;
+    --highlight: #ead8ff;
+}
+
+body, html, hr {
+    background-color: var(--background);
+    color: var(--main);
+}
+
+a, h1 {
+    color: var(--highlight);
+}
+
+img {
+    width: 30em;
+}
+
+h1 {
+    text-align: center;
+}
+
+.pairParent {
+    display:flex; 
+    justify-content: space-around;
+}
+
+select, input, option {
+    border: 1px solid var(--main);
+    border-radius: 4px;
+    background-color: var(--background);
+    color: var(--main);
+    height: 50px;
+    font-size: 1.5em;
+}
+
+#float, #pattern {
+    height: 25px;
+    width: 25px;
+}
+
+.suggestion {
+    cursor:pointer
+}
+
+label {
+    font-size: 2em;
+}
+
+#skin {
+    width: 70vw;
+}
+
+button {
+    border: 1px solid var(--main);
+    border-radius: 4px;
+    background-color: var(--main);
+    color: var(--background);
+    height: 50px;
+    width: 70px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+select::-ms-expand {
+    background: green;
+}

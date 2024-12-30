@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSFloat Skin Matcher</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <label for="quality">Quality:</label>
+    <select id="quality" name="quality">
+        <option value="Factory New">Factory New</option>
+        <option value="Minimal Wear">Minimal Wear</option>
+        <option value="Field-Tested">Field-Tested</option>
+        <option value="Well-Worn">Well-Worn</option>
+        <option value="Battle-Scarred">Battle-Scarred</option>
+    </select>
+    <br>
+
+    <label for="type">Type:</label>
+    <select id="type" name="type">
+        <option value="normal">Normal</option>
+        <option value="stattrak">StatTrak™</option>
+        <option value="souvenir">Souvenir</option>
+        <option value="any">Any</option>
+    </select>
+    <br>
+
+    <label for="pattern"><a target="_blank" href="https://pattern.wiki/">Pattern Based:</a></label>
+    <input id="pattern" type="checkbox" name="pattern">
+    <br>
+
+    <label for="float">Sort by float (rather than price):</label>
+    <input id="float" type="checkbox" name="float">
+    <br>
+
+    <label for="skin">Skin:</label>
+    <input id="skin" name="skin" type="text">
+
+    <button id="search">Go!</button>
+    <script src="./script.js"></script>
+
+    <div id="autofill"></div>
+    <div id="results"></div>
+</body>
+</html>
