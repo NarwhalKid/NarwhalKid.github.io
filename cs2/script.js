@@ -36,7 +36,7 @@ document.getElementById("search").onclick = ()=>{
 
             if (!pair[1].screenshots.front) {
                 const url = pair[1].screenshots.buff ? pair[1].screenshots.buff : "https://backend.narwhalkid.com/no/preview";
-                pair1ImgHTML = `<img src="${url}">`;
+                pair2ImgHTML = `<img src="${url}">`;
                 pair2Type = "Buff";
             } else {
                 pair2ImgHTML = `<img src="${pair[1].screenshots.front}"><br><img src="${pair[1].screenshots.back}">`
