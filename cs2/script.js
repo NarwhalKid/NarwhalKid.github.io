@@ -9,7 +9,17 @@ document.getElementById("search").onclick = ()=>{
     resultsDiv.innerHTML = "<h1>Loading...</h1>"
 
     const url = `https://backend.narwhalkid.com/cs2/item?item=${item}&pattern=${pattern}&sort=${sort}&quality=${quality}&type=${type}`
-    fetch(url)
+    let postJSON = {
+        method: 'POST', // Specify the HTTP method
+        headers: {
+            'Content-Type': 'application/json', // Set the content type for JSON
+        }
+    }
+    if (document.getElementById("buff").value != "") {
+        postJSON.body = document.getElementById("buff").value;
+    }
+    console.log(postJSON);
+    fetch(url, postJSON)
     .then((response) => {
       return response.json();
     })
