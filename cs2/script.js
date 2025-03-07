@@ -85,7 +85,7 @@ document.getElementById("skin").onkeyup = ()=>{
         autofill.innerHTML = "";
         return;
     }
-    fetch(`https://backend.narwhalkid.com/cs2autocomplete?query=${searchQuery}`)
+    fetch(`https://backend.narwhalkid.com/cs2autocomplete?query=${searchQuery}&skinport=${document.getElementById("skinport").checked}&buff=${document.getElementById("buffInclude").checked}&csfloat=${document.getElementById("csfloat").checked}`)
     .then((response) => {
       return response.json();
     })
