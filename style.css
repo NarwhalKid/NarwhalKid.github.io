@@ -2,12 +2,14 @@ body {
     background-color: black;
     text-align: center;
     margin: 0;
+    margin-bottom: 53px;
 }
 
 h1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 5em
+    font-size: 5em;
+    margin: 30px;
 }
 
 a {
@@ -21,7 +23,7 @@ a {
     width: 100%;
     display: flex;
     text-align: center;
-    justify-content: center
+    justify-content: center;
 }
 
 div {
