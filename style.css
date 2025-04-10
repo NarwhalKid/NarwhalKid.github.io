@@ -36,6 +36,8 @@ div {
     cursor: pointer;
     width: 80%;
     margin-left: 10%;
+    transition-duration: .15s;
+    transition-timing-function: ease-out;
 }
 
 div + div {
