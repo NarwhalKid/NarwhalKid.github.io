@@ -22,7 +22,7 @@ games = [
   ["minesweeper", "./game/minesweeper/", true], 
   ["super smash flash", "./game/supersmashflash"],
   ["2048Verse", "https://2048verse.com/"], 
-  ["crazy cattle 3d", "./game/crazycattle3d"], 
+  // ["crazy cattle 3d", "./game/crazycattle3d"], 
   ["the binding of isaac", "./game/bindingofisaac"], 
   ["minecraft", "./game/minecraft"], 
   ["clicker heroes", "./game/clickerheroes/"],
