@@ -83,6 +83,10 @@ button:focus {
   font-weight: bolder;
   transition-duration: 0.5s;
   transition-timing-function: cubic-bezier(.46,.03,.52,.96);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 0px 10px;
 }
 
 .game:hover h2 {
@@ -91,10 +95,10 @@ button:focus {
 
 #footer {
   text-align: center;
-  margin-bottom: 3.125vw;
+  padding-bottom: 3.125vw;
 }
 
 #footer a {
   color: #dab9ff;
-  font-size: 1vw;
+  font-size: 1.5vw;
 }
