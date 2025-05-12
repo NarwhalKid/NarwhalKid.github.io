@@ -21,7 +21,7 @@ games = [
   ["movies, tv, & anime", "./game/streaming/"], 
   ["minesweeper", "./game/minesweeper/", true], 
   ["gladihoppers", "./game/gladihoppers/"], 
-  ["super smash flash", "./game/supersmashflash"],
+  // ["super smash flash", "./game/supersmashflash"],
   ["2048Verse", "https://2048verse.com/"], 
   // ["crazy cattle 3d", "./game/crazycattle3d"], 
   ["the binding of isaac", "./game/bindingofisaac"], 
