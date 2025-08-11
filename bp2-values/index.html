@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BP2 Values</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="filters">
+        <details>
+            <summary>Types</summary>
+            <div id="types"></div>
+        </details>
+        <details>
+            <summary>Sort By</summary>
+            <div id="sort-options">
+                <label>
+                    <input type="radio" name="sort" value="name" checked>
+                    Name
+                </label>
+                <label>
+                    <input type="radio" name="sort" value="demand">
+                    Demand
+                </label>
+                <label>
+                    <input type="radio" name="sort" value="value">
+                    Value
+                </label>
+            </div>
+        </details>
+        <input type="text" id="search" placeholder="Search">
+    </div>
+    <div id="item-list"></div>
+    <script src="script.js"></script>
+</body>
+</html>

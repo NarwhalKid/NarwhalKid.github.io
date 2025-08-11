@@ -1,1 +1,0 @@
-window.location.replace("https://www.reddit.com/user/Narwhal-Kid/")

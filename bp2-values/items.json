@@ -1,0 +1,1141 @@
+{
+    "Zeus": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [28],
+                "cost": [22]
+            }
+        },
+        "demand": 7,
+        "rarity": 1
+    },
+    "Poseidon": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [16],
+                "cost": [12]
+            }
+        },
+        "demand": 7,
+        "rarity": 1
+    },
+    "Mermaid": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [8],
+                "cost": [5]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "Azure": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [0.5],
+                "cost": [0.5]
+            }
+        },
+        "demand": 3,
+        "rarity": 1
+    },
+    "Jade": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [0.5],
+                "cost": [0.5]
+            }
+        },
+        "demand": 3,
+        "rarity": 1
+    },
+    "Arctic": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [1],
+                "cost": [1]
+            }
+        },
+        "demand": 4,
+        "rarity": 1
+    },
+    "Sakura": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [2],
+                "cost": [2]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "RGB Eternal": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [3],
+                "cost": [5]
+            },
+            "Stocking": {
+                "value": [6],
+                "cost": [5]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "Splash": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [9],
+                "cost": [8]
+            }
+        },
+        "demand": 6,
+        "rarity": 1
+    },
+    "Paranormal": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [10],
+                "cost": [8]
+            }
+        },
+        "demand": 6,
+        "rarity": 1
+    },
+    "Cosmic": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [12],
+                "cost": [10]
+            },
+            "Tag/Serial": {
+                "value": [4, 5],
+                "cost": [4]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Cerulean": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [13],
+                "cost": [10]
+            },
+            "Tag/Serial": {
+                "value": [4, 5],
+                "cost": [4]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Phantom": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [14],
+                "cost": [12]
+            },
+            "Tag/Serial": {
+                "value": [4, 5],
+                "cost": [4]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Jinx": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [80],
+                "cost": [50]
+            }
+        },
+        "demand": 9,
+        "rarity": 2
+    },
+    "Infinite": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [17],
+                "cost": [15]
+            },
+            "Tag/Serial": {
+                "value": [6, 8],
+                "cost": [6, 8]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Radiant": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [18],
+                "cost": [15]
+            },
+            "Tag/Serial": {
+                "value": [5, 6],
+                "cost": [5]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Heartache": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [20],
+                "cost": [18]
+            }
+        },
+        "demand": 8,
+        "rarity": 1
+    },
+    "Blue Cosmic": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [22],
+                "cost": [18]
+            }
+        },
+        "demand": 9,
+        "rarity": 1
+    },
+    "Latte": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [23],
+                "cost": [18]
+            }
+        },
+        "demand": 8,
+        "rarity": 1
+    },
+    "Blood Radiant": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [25],
+                "cost": [20]
+            },
+            "Tag/Serial": {
+                "value": [10, 12],
+                "cost": [8, 10]
+            }
+        },
+        "demand": 7,
+        "rarity": 2
+    },
+    "Blue Splash": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [21],
+                "cost": [18]
+            }
+        },
+        "demand": 7,
+        "rarity": 1
+    },
+    "Eternal": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [24],
+                "cost": [20]
+            },
+            "Tag/Serial": {
+                "value": [5, 6],
+                "cost": [5]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Fracture": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [24],
+                "cost": [20]
+            },
+            "Tag/Serial": {
+                "value": [5, 6],
+                "cost": [5]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Envy": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [36],
+                "cost": [25]
+            }
+        },
+        "demand": 8,
+        "rarity": 2
+    },
+    "Insomnia": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [36],
+                "cost": [25]
+            }
+        },
+        "demand": 8,
+        "rarity": 2
+    },
+    "Dracula": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [34],
+                "cost": [25]
+            }
+        },
+        "demand": 8,
+        "rarity": 2
+    },
+    "Miracle": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [40],
+                "cost": [25]
+            },
+            "Tag/Serial": {
+                "value": [24, 16],
+                "cost": [16, 12]
+            }
+        },
+        "demand": 7,
+        "rarity": 2
+    },
+    "Cyclone": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [42],
+                "cost": [30]
+            }
+        },
+        "demand": 8,
+        "rarity": 2
+    },
+    "Mellow": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [55],
+                "cost": [35]
+            },
+            "Tag/Serial": {
+                "value": [8, 11],
+                "cost": [8, 10]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Grime": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [65],
+                "cost": [40]
+            },
+            "Tag/Serial": {
+                "value": [55],
+                "cost": [35]
+            }
+        },
+        "demand": 7,
+        "rarity": 2
+    },
+    "Hyperion": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [70],
+                "cost": [45]
+            }
+        },
+        "demand": 8,
+        "rarity": 2
+    },
+    "Supernova": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [75],
+                "cost": [45]
+            },
+            "Tag/Serial": {
+                "value": [38],
+                "cost": [25]
+            }
+        },
+        "demand": 7,
+        "rarity": 2
+    },
+    "Luminance": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [85],
+                "cost": [50]
+            }
+        },
+        "demand": 9,
+        "rarity": 2
+    },
+    "Equinox": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [95],
+                "cost": [55]
+            }
+        },
+        "demand": 9,
+        "rarity": 2
+    },
+    "Ghoul": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [90],
+                "cost": [55]
+            },
+            "Tag/Serial": {
+                "value": [110],
+                "cost": [70]
+            }
+        },
+        "demand": 9,
+        "rarity": 2
+    },
+    "Sea of Voices": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [125],
+                "cost": [80]
+            }
+        },
+        "demand": 6,
+        "rarity": 3
+    },
+    "Permafrost": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [160],
+                "cost": [90]
+            }
+        },
+        "demand": 5,
+        "rarity": 3
+    },
+    "Neptune": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [180],
+                "cost": [100]
+            },
+            "Tag/Serial": {
+                "value": [200],
+                "cost": [105]
+            }
+        },
+        "demand": 8,
+        "rarity": 3
+    },
+    "Radiant 2": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [220],
+                "cost": [115]
+            }
+        },
+        "demand": 8,
+        "rarity": 3
+    },
+    "Lovely Azure": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [280],
+                "cost": [140]
+            },
+            "Tag/Serial": {
+                "value": [360],
+                "cost": [160]
+            }
+        },
+        "demand": 8,
+        "rarity": 3
+    },
+    "Corrupt": {
+        "type": "Knife",
+        "variants": {
+            "Tag/Serial": {
+                "value": [260, 360],
+                "cost": [120, 160]
+            }
+        },
+        "demand": 8,
+        "rarity": 3
+    },
+    "Vampire": {
+        "type": "Knife",
+        "variants": {
+            "Tag/Serial": {
+                "value": [260, 360],
+                "cost": [120, 160]
+            }
+        },
+        "demand": 8,
+        "rarity": 3
+    },
+    "Aureus": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [360],
+                "cost": [180]
+            },
+            "Tag/Serial": {
+                "value": [360, 460],
+                "cost": [180, 220]
+            }
+        },
+        "demand": 7,
+        "rarity": 3
+    },
+    "Eerie": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [550],
+                "cost": [250]
+            },
+            "Tag/Serial": {
+                "value": [350],
+                "cost": [150]
+            }
+        },
+        "demand": 9,
+        "rarity": 4
+    },
+    "Keqing": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [700],
+                "cost": [300]
+            },
+            "Tag/Serial": {
+                "value": [700, 1100],
+                "cost": [300, 400]
+            }
+        },
+        "demand": 9,
+        "rarity": 4
+    },
+    "La Lune": {
+        "type": "Knife",
+        "variants": {
+            "OG": {
+                "value": [1200],
+                "cost": [450]
+            },
+            "Tag/Serial": {
+                "value": [700, 1000],
+                "cost": [300, 400]
+            }
+        },
+        "demand": 8,
+        "rarity": 4
+    },
+    "Night Sky": {
+        "type": "Gun",
+        "variants": {
+            "OG": {
+                "value": [80],
+                "cost": [50]
+            }
+        },
+        "demand": 7,
+        "rarity": 3
+    },
+    "Ash's Skyline": {
+        "type": "Gun",
+        "variants": {
+            "OG": {
+                "value": [70],
+                "cost": [45]
+            }
+        },
+        "demand": 7,
+        "rarity": 3
+    },
+    "Forest Gun": {
+        "type": "Gun",
+        "variants": {
+            "OG": {
+                "value": [30],
+                "cost": [25]
+            }
+        },
+        "demand": 6,
+        "rarity": 3
+    },
+    "Legacy": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": ["?"],
+                "cost": ["?"]
+            }
+        },
+        "demand": 6,
+        "rarity": 4
+    },
+    "Royal Red": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [250],
+                "cost": [115]
+            },
+            "Tag/Serial": {
+                "value": [60],
+                "cost": [35]
+            }
+        },
+        "demand": 6,
+        "rarity": 4
+    },
+    "Festive Devil": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [230],
+                "cost": [110]
+            },
+            "Tag/Serial": {
+                "value": [35, 45],
+                "cost": [30]
+            }
+        },
+        "demand": 6,
+        "rarity": 4
+    },
+    "Dusk": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [150],
+                "cost": [80]
+            },
+            "Tag/Serial": {
+                "value": [140, 180],
+                "cost": [80, 100]
+            }
+        },
+        "demand": 6,
+        "rarity": 3
+    },
+    "Hallow": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [70],
+                "cost": [50]
+            },
+            "Tag/Serial": {
+                "value": [35],
+                "cost": [25]
+            }
+        },
+        "demand": 5,
+        "rarity": 3
+    },
+    "Vibrant": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [60],
+                "cost": [40]
+            },
+            "Tag/Serial": {
+                "value": [35],
+                "cost": [25]
+            }
+        },
+        "demand": 7,
+        "rarity": 3
+    },
+    "Rosa Devil": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [30],
+                "cost": [24]
+            }
+        },
+        "demand": 7,
+        "rarity": 3
+    },
+    "Blossom": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [26],
+                "cost": [20]
+            },
+            "Tag/Serial": {
+                "value": [7],
+                "cost": [5]
+            }
+        },
+        "demand": 5,
+        "rarity": 2
+    },
+    "Decay": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [24],
+                "cost": [16]
+            },
+            "Tag/Serial": {
+                "value": [5],
+                "cost": [4]
+            }
+        },
+        "demand": 5,
+        "rarity": 3
+    },
+    "Seafoam": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [22],
+                "cost": [16]
+            }
+        },
+        "demand": 5,
+        "rarity": 2
+    },
+    "RGB Devil": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [20],
+                "cost": [14]
+            }
+        },
+        "demand": 6,
+        "rarity": 1
+    },
+    "Royal Blue": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [20],
+                "cost": [14]
+            },
+            "Tag/Serial": {
+                "value": [4],
+                "cost": [4]
+            }
+        },
+        "demand": 5,
+        "rarity": 3
+    },
+    "Fragrant": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [16],
+                "cost": [10]
+            },
+            "Tag/Serial": {
+                "value": [11],
+                "cost": [8]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Fluorescent": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [13],
+                "cost": [10]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Storm": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [13],
+                "cost": [10]
+            },
+            "Tag/Serial": {
+                "value": [7],
+                "cost": [5]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Cupid": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [12],
+                "cost": [10]
+            },
+            "Tag/Serial": {
+                "value": [6],
+                "cost": [4]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Swamp": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [10],
+                "cost": [8]
+            },
+            "Tag/Serial": {
+                "value": [6],
+                "cost": [4]
+            }
+        },
+        "demand": 5,
+        "rarity": 2
+    },
+    "Forest Devil": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [9],
+                "cost": [7]
+            },
+            "Tag/Serial": {
+                "value": [5],
+                "cost": [4]
+            }
+        },
+        "demand": 5,
+        "rarity": 3
+    },
+    "Frost Devil": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [8],
+                "cost": [6]
+            },
+            "Tag/Serial": {
+                "value": [4],
+                "cost": [3]
+            }
+        },
+        "demand": 5,
+        "rarity": 2
+    },
+    "Lovesick": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [7],
+                "cost": [5]
+            },
+            "Tag/Serial": {
+                "value": [4],
+                "cost": [3]
+            }
+        },
+        "demand": 4,
+        "rarity": 1
+    },
+    "Cursed": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [7],
+                "cost": [5]
+            },
+            "Tag/Serial": {
+                "value": [4],
+                "cost": [3]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "Shore": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [6],
+                "cost": [5]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "Gingerbread": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [6],
+                "cost": [4]
+            },
+            "Tag/Serial": {
+                "value": [3],
+                "cost": [3]
+            }
+        },
+        "demand": 4,
+        "rarity": 4
+    },
+    "Christmas": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [5],
+                "cost": [3]
+            }
+        },
+        "demand": 3,
+        "rarity": 4
+    },
+    "Lantern": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [4],
+                "cost": [3]
+            }
+        },
+        "demand": 3,
+        "rarity": 4
+    },
+    "Pumpkin": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [4],
+                "cost": [3]
+            }
+        },
+        "demand": 3,
+        "rarity": 4
+    },
+    "Cat": {
+        "type": "Chair",
+        "variants": {
+            "OG": {
+                "value": [3],
+                "cost": [1]
+            }
+        },
+        "demand": 4,
+        "rarity": 1
+    },
+    "RGB Antlers": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": ["?"],
+                "cost": ["?"]
+            }
+        },
+        "demand": 0,
+        "rarity": 4
+    },
+    "RGB Wings": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": [11],
+                "cost": [8]
+            }
+        },
+        "demand": 6,
+        "rarity": 1
+    },
+    "8-BIT": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": [6],
+                "cost": [5]
+            },
+            "Tag/Serial": {
+                "value": [3],
+                "cost": [3]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Mono Wings": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": [5],
+                "cost": [5]
+            },
+            "Tag/Serial": {
+                "value": [3],
+                "cost": [3]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "Bat Guard": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": [2.5],
+                "cost": [2]
+            }
+        },
+        "demand": 4,
+        "rarity": 1
+    },
+    "Festive Wings": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": [2],
+                "cost": [2]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "Animated Wings": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": [1],
+                "cost": [1]
+            }
+        },
+        "demand": 4,
+        "rarity": 1
+    },
+    "Neon Wings": {
+        "type": "Accessory",
+        "variants": {
+            "OG": {
+                "value": [1],
+                "cost": [1]
+            }
+        },
+        "demand": 4,
+        "rarity": 1
+    },
+    "Levitating": {
+        "type": "Animation",
+        "variants": {
+            "OG": {
+                "value": [120],
+                "cost": [75]
+            }
+        },
+        "demand": 7,
+        "rarity": 3
+    },
+    "Slouch 2": {
+        "type": "Animation",
+        "variants": {
+            "OG": {
+                "value": [1],
+                "cost": [1]
+            }
+        },
+        "demand": 5,
+        "rarity": 1
+    },
+    "Rebel": {
+        "type": "Animation",
+        "variants": {
+            "OG": {
+                "value": [0.5],
+                "cost": [0.5]
+            }
+        },
+        "demand": 4,
+        "rarity": 1
+    },
+    "Display": {
+        "type": "Effect",
+        "variants": {
+            "OG": {
+                "value": [38],
+                "cost": [26]
+            }
+        },
+        "demand": 6,
+        "rarity": 2
+    },
+    "Snowfall": {
+        "type": "Effect",
+        "variants": {
+            "OG": {
+                "value": [6],
+                "cost": [4]
+            },
+            "Tag/Serial": {
+                "value": [3],
+                "cost": [2]
+            }
+        },
+        "demand": 7,
+        "rarity": 2
+    }
+}
