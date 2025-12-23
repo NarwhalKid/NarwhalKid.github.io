@@ -146,7 +146,7 @@ class SearchPager extends VideoPager {
 	}
 }
 source.search = function (query, type, order, filters) {
-    return new SearchPager(query, 1);
+    return new SearchPager(query);
 };
 function search(query, page) {
     let videos = [];
@@ -173,9 +173,42 @@ source.getSearchChannelContentsCapabilities = function () {
 		filters: []
 	};
 };
+
+class ChannelContentsSearchPager extends VideoPager {
+	constructor(query) {
+		super(...Object.values(search(query, 1)));
+		this.query = query;
+		this.page = 1;
+	}
+	nextPage() {
+		this.page = this.page + 1;
+        const searchResults = channelContentsSearch(this.query, this.page + 1);
+		this.results = searchResults.results;
+		this.hasMore = searchResults.hasMore;
+		return this;
+	}
+}
 source.searchChannelContents = function (channelUrl, query, type, order, filters) {
-	throw new ScriptException("This is a sample");
+    return new ChannelContentsSearchPager(query);
 };
+function channelContentsSearch(query, page) {
+    let hasMore = true;
+    const info = getInfoFromUserUrl(channelUrl);
+    const dataResp = http.GET(
+        `${apiUrl}/${info.service}/user/${info.userId}/posts?o=${(page-1)*50}&q=${encodeURIComponent(query) || ""}`, 
+        {"Accept": "text/css"}, 
+        true
+    );
+    if (!dataResp.isOk)
+        throw new ScriptException("Failed to search creator's posts");
+    const response = JSON.parse(dataResp.body);
+    const videos = getVideos(response);
+    if (response.length < 50) hasMore = false;
+    return {
+        results: videos,
+        hasMore
+    };
+}
 
 source.searchChannels = function (query) {
     const dataResp = http.GET(`${apiUrl}/creators`, {"Accept": "text/css"}, true);
