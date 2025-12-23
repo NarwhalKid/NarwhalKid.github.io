@@ -139,7 +139,7 @@ class SearchPager extends VideoPager {
 	}
 	nextPage() {
 		this.page = this.page + 1;
-        const searchResults = search(query, this.page + 1);
+        const searchResults = search(this.query, this.page + 1);
 		this.results = searchResults.results;
 		this.hasMore = searchResults.hasMore;
 		return this;
@@ -232,7 +232,7 @@ class ChannelContentsPager extends VideoPager {
 	}
 	nextPage() {
 		this.page = this.page + 1;
-        const searchResults = getChannelContents(url, this.page + 1);
+        const searchResults = getChannelContents(this.url, this.page + 1);
 		this.results = searchResults.results;
 		this.hasMore = searchResults.hasMore;
 		return this;
