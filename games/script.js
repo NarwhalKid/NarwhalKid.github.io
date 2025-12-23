@@ -12,8 +12,14 @@ function makeNewGameBox(dispName, link) {
   document.getElementById('games').appendChild(newDiv)
 }
 
+if (!localStorage.getItem("popup")) {
+  localStorage.setItem("popup", "true");
+  alert("Hey guys! It's Narwhal. Sorry I haven't added any new games recently, I've been focusing on updates for my other website: 2048Verse. Thanks to everyone who plays my games, it's pretty cool to see so many people using my site. I could've easily added ads or whatever to the site but I hate school and I wanted to make it easier for people to play games at school. But yeah, just wanted you guys to know I'm not dead, I just have a life now lol\n\nTL;DR: I'm not dead");
+}
 
 games = [
+  ["2048Verse", "https://2048verse.com/"], 
+  ["2048Verse alt link", "https://2048verse.narwhalkid.com/"], 
   ["narwhalgpt", "/chat/"],
   ["1v1.lol", "./game/1v1lol/", true], 
   ["balatro", "https://backend.narwhalkid.com/balatro"], 
@@ -23,14 +29,12 @@ games = [
   ["minesweeper", "./game/minesweeper/", true], 
   ["gladihoppers", "./game/gladihoppers/"], 
   // ["super smash flash", "./game/supersmashflash"],
-  ["2048Verse", "https://2048verse.com/"], 
   // ["crazy cattle 3d", "./game/crazycattle3d"], 
   ["the binding of isaac", "./game/bindingofisaac"], 
   ["minecraft", "./game/minecraft"], 
   ["clicker heroes", "./game/clickerheroes/"],
   ["retro bowl", "./game/retrobowl/"],
   ["retro bowl college", "./game/retrobowlcollege/"],
-  ["gba games", "./game/emulators/gba/"], 
   // ["unrestricted youtube", "https://inv.nadeko.net/feed/popular"], 
   ["funny shooter 2", "./game/funnyshooter2/"], 
   ["sort the court", "./game/sortthecourt/"], 
@@ -99,7 +103,7 @@ let proxyEnabled = false;
 
 async function checkWebsite(url) {
   try {
-    const response = await fetch(url);
+    const response = await fetch(url, { signal: AbortSignal.timeout(5000) });
 
     if (response.ok) {
         proxyEnabled = true;
