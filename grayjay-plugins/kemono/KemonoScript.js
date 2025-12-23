@@ -190,7 +190,7 @@ source.searchChannels = function (query) {
             new PlatformID(PLATFORM, x.id, config.id), 
             x.name,
             infoToUserUrl(x.service, x.id),
-            getUserInfo(x.service, x.id).thumbnail
+            `${imageUrl}/icons/${x.service}/${x.id}`
         ),
     );
 
