@@ -1,0 +1,37 @@
+{
+	"name": "Kemono",
+	"description": "Kemono is a platform allowing users to view membership only content.",
+	"author": "Anon",
+
+	"scriptUrl": "./KemonoScript.js",
+	"version": 1,
+	
+	"iconUrl": "./kemono_logo.png",
+	"id": "ad18112a-b951-4b4c-9f7e-492ed0e8e806",
+	
+	"scriptSignature": "",
+	"scriptPublicKey": "",
+	"packages": ["Http","DOMParser"],
+	
+	"allowEval": false,
+	"allowUrls": [
+		"everywhere"
+	],
+	"settings": [
+		{
+			"variable": "hideNsfw",
+			"name": "Hide profiles with NSFW tag",
+			"description": "Hides profiules with the NSFW tag (Not guaranteed to block all relavant content, it's on Kemono's side)",
+			"type": "boolean",
+			"default": "true"
+		}
+	],
+
+    "authentication": {
+		"loginUrl": "https://kemono.cr/authentication/login",
+		"cookiesToFind": ["session"],
+		"cookiesExclOthers": false
+	},
+
+	"supportedClaimTypes": [12]
+}
