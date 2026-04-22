@@ -1,1 +1,0 @@
-window.location.replace("https://www.twitch.tv/narwhal__kid")
